@@ -1040,6 +1040,11 @@ find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
+flag-icons@^6.11.2:
+  version "6.11.2"
+  resolved "https://registry.npmjs.org/flag-icons/-/flag-icons-6.11.2.tgz"
+  integrity sha512-xEVPdyDkL28GG0H+x7OP89uFXDgCduNX5DEJ9ZJuxpg3dnDCioBoHfhl4kjC4ixnOnVh7ajL/PNFg7my8qBxtQ==
+
 flat-cache@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
@@ -1850,6 +1855,11 @@ react-bootstrap@^2.9.1:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
+react-country-flag@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/react-country-flag/-/react-country-flag-3.1.0.tgz"
+  integrity sha512-JWQFw1efdv9sTC+TGQvTKXQg1NKbDU2mBiAiRWcKM9F1sK+/zjhP2yGmm8YDddWyZdXVkR8Md47rPMJmo4YO5g==
+
 react-dom@^15.0.1:
   version "15.7.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-15.7.0.tgz"
@@ -1919,7 +1929,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@*, "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", react@>=0.14.0, react@>=15.0.0, react@>=16.14.0, react@>=16.6.0, react@>=16.8.0, react@17.0.2:
+react@*, "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", react@>=0.14.0, react@>=15.0.0, react@>=16, react@>=16.14.0, react@>=16.6.0, react@>=16.8.0, react@17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==

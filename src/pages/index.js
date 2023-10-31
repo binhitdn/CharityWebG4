@@ -1,7 +1,11 @@
 import Slider from "../components/Slider/Slider";
 import SectionBigProject from "../components/pages/Home/SectionBigProject";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  // Hiển thị mã ngôn ngữ hiện tại
+  const { i18n } = useTranslation();
+  console.log(i18n.language);
   const programs = [
     // Chương trình 1
     {

@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import "../../../node_modules/flag-icons/css/flag-icons.min.css";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -45,32 +46,34 @@ const Navbar = () => {
     <div>
       <div style={{ backgroundColor: "#01470c" }} className="mobile-hidden">
         <div className="container mx-auto lg:flex lg:flex-row  lg:justify-between justify-center items-center space-y-2  text-white py-3 w-full">
-          <div
-            className="lg:flex lg:flex-row flex flex-col justify-center items-center space-x-12 lg:space-y-0 space-y-2"
-            style={{ backgroundColor: "#01470c" }}
-          >
-            <div className="flex flex-row space-x-2">
-              <FaMapMarkerAlt className="w-5 h-5 text-white" />
-              <p>{t("navbar.address")}</p>
-            </div>
-            <div className="flex flex-row space-x-2">
-              <FaMobileAlt className="w-5 h-5 text-white" />
-              <p> (0481) 123 987 2411</p>
-            </div>
-            <div className="flex flex-row space-x-2">
-              <FaRegClock className="w-5 h-5 text-white" />
-              <p>Mon-Sat: 07:00 - 17:00</p>
+          <div>
+            <div
+              className="lg:flex lg:flex-row flex flex-col justify-center items-center space-x-12 lg:space-y-0 space-y-2"
+              style={{ backgroundColor: "#01470c" }}
+            >
+              <div className="flex flex-row space-x-2">
+                <FaMapMarkerAlt className="w-5 h-5 text-white" />
+                <p>{t("navbar.address")}</p>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <FaMobileAlt className="w-5 h-5 text-white" />
+                <p> (0481) 123 987 2411</p>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <FaRegClock className="w-5 h-5 text-white" />
+                <p>Mon-Sat: 07:00 - 17:00</p>
+              </div>
             </div>
           </div>
           <div className="ml-4">
             <select
               onChange={(e) => changeLanguage(e.target.value)}
-              className="bg-transparent border-none text-white text-xl font-bold"
+              className="bg-green-500 text-white text-xl font-bold rounded-lg p-2 shadow-lg"
             >
               <option value="en">English</option>
-              <option value="vi">Tiếng Việt</option>
-              <option value="fr">Français</option>
-              <option value="ja">日本語</option>
+              <option value="vi">Vietnamese</option>
+              <option value="fr">French</option>
+              <option value="ja">Japanese</option>
             </select>
           </div>
           <div className="flex flex-row space-x-4  justify-center items-center ">

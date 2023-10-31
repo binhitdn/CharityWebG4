@@ -8,6 +8,10 @@ const Meta = ({ title, keywords, description }) => {
       <meta name="description" content={description} />
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+      />
 
       <title>{title}</title>
     </Head>

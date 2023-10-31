@@ -6,7 +6,7 @@ const contributors = [
     name: "Bruce Roberts",
     role: "Volunteer leader",
     avatar:
-      "https://www.vietnamfineart.com.vn/wp-content/uploads/2023/07/anh-avatar-dep-cho-con-gai-1.jpg",
+      "https://cpad.ask.fm/191/071/915/-59996988-202kp5r-5mgotbogtgnq9hf/original/avatar.jpg",
     facebook: "#",
     twitter: "#",
     website: "#",
@@ -16,7 +16,7 @@ const contributors = [
     name: "John Doe",
     role: "Volunteer",
     avatar:
-      "https://www.vietnamfineart.com.vn/wp-content/uploads/2023/07/anh-avatar-dep-cho-con-gai-1.jpg",
+      "https://cpad.ask.fm/191/071/915/-59996988-202kp5r-5mgotbogtgnq9hf/original/avatar.jpg",
     facebook: "#",
     twitter: "#",
     website: "#",
@@ -26,7 +26,7 @@ const contributors = [
     name: "Helen Keller",
     role: "Creative Director",
     avatar:
-      "https://www.vietnamfineart.com.vn/wp-content/uploads/2023/07/anh-avatar-dep-cho-con-gai-1.jpg",
+      "https://cpad.ask.fm/191/071/915/-59996988-202kp5r-5mgotbogtgnq9hf/original/avatar.jpg",
     facebook: "#",
     twitter: "#",
     website: "#",
@@ -45,7 +45,7 @@ const Contributor = () => {
           </div>
           <div className="flex justify-center ">
             {contributors.map((contributor) => (
-              <div className="px-20" key={contributor.id}>
+              <div key={contributor.id} className="px-20">
                 <div>
                   <div>
                     <img
@@ -89,7 +89,7 @@ const Contributor = () => {
           </div>
         </div>
 
-        <div className="row justify-center">
+        <div className="row justify-center pt-20">
           <div className="col-xl-12 col-lg-7 col-md-10 col-sm-10">
             <div className="section-tittle section-tittle2 text-center mb-10">
               <h2 className="text-3xl font-bold">Người sáng lập</h2>
@@ -99,19 +99,18 @@ const Contributor = () => {
         <div className="row justify-center">
           <div className="px-20">
             <img
-              src="https://www.vietnamfineart.com.vn/wp-content/uploads/2023/07/anh-avatar-dep-cho-con-gai-1.jpg"
+              src="/contribute/founderavt.jpg"
               alt=""
               className="rounded-full w-40 h-40 mx-auto"
             />
-            <div className="text-center">
-              <h3 className="text-xl font-bold">Bruce Roberts</h3>
-              <p>Volunteer leader</p>
+            <div className="text-center pb-10 pt-5">
+              <h3 className="text-xl font-bold">Đinh THị Đông Phương</h3>
+              <p className="text-center text-purple-500  w-1/2 mx-auto italic text-2xl">
+                Với niềm đam mê không ngừng, chúng tôi đã thực hiện các dự án và
+                chương trình từ thiện có tầm ảnh hưởng, giúp cải thiện cuộc sống
+                của những người cần giúp đỡ nhất
+              </p>
             </div>
-          </div>
-          <div className="px-20 ">
-            {
-              "Chúng tôi đã tạo ra một nền tảng để kết nối những người có nhu cầu với những người có thể giúp đỡ. Chúng tôi tin rằng mỗi người đều có thể làm điều gì đó để giúp đỡ người khác và tạo ra một thế giới tốt đẹp hơn."
-            }
           </div>
         </div>
       </div>
