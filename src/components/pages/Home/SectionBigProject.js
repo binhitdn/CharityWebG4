@@ -11,7 +11,7 @@ function SectionBigProject() {
         "DỰ ÁN PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
       content:
         "Cụm dân cư Pà-Căng mới cách cầu Xơi đường Hồ Chí Minh 3km đường bộ. Làng nằm bên bờ con sông Dakmy hiền hòa và phía sau là những dãy núi mây phủ sớm chiều êm đềm nên thơ. ...",
-      video: "https://www.youtube.com/embed/3_PaIaf8DhVrQ",
+      video: "https://www.youtube.com/embed/543jwFfCZvg",
     },
     en: {
       title:
