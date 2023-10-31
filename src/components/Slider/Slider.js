@@ -8,7 +8,9 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Navigation } from "swiper";
+import { useTranslation } from "react-i18next";
 const Slider = () => {
+  const { t } = useTranslation("translationHome");
   return (
     <div className=" h-screen w-full">
       <Swiper
@@ -29,10 +31,10 @@ const Slider = () => {
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
                 <p className="text-7xl text-white font-bold">
-                  Chúng ta có sức mạnh để giúp đỡ mọi người
+                  {t("slider.title")}
                 </p>
                 <p className="text-2xl font-light text-white text-center">
-                  Hãy tham gia vào cuộc hành trình này
+                  {t("slider.subtitle")}
                 </p>
                 <button
                   type="button"

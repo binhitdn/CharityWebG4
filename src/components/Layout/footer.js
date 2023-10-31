@@ -123,7 +123,9 @@ const footer = () => {
           borderTop: "1px solid #ccc",
         }}
       >
-        <p>© 2023 Charity. All rights reserved. Designed by 21JIT </p>
+        <p className="text-white  font-weight">
+          © 2023 Charity. All rights reserved. Designed by 21JIT{" "}
+        </p>
         <div className="flex flex-row space-x-3">
           <FaFacebook className="w-5 h-5 text-white" />
           <FaInstagram className="w-5 h-5 text-white" />
