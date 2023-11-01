@@ -89,7 +89,9 @@ const Navbar = ({ toggleSidebar }) => {
             <a href="#" className="flex">
               <div className="flex flex-row space-x-2 justify-center items-center">
                 <Image src="/logo.png" width={70} height={70} />
-                <p className="text-white text-2xl font-bold">Charity</p>
+                <p className="text-white text-2xl font-bold">
+                  Smile Eyes Charity
+                </p>
               </div>
             </a>
           </Link>
@@ -106,7 +108,7 @@ const Navbar = ({ toggleSidebar }) => {
               className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-4"
               aria-expanded="false"
-              onClick={toggleSidebar}
+              onClick={() => toggleSidebar()}
             >
               <span className="sr-only">Open main menu</span>
               <svg

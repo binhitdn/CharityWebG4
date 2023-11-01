@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
   const [showSidebar, setShowSidebar] = React.useState(false);
 
   const toggleSidebar = () => {
-    setShowSidebar((oldVal) => !oldVal);
+    setShowSidebar(!showSidebar);
   };
 
   return (
