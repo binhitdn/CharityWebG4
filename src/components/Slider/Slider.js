@@ -39,8 +39,8 @@ const Slider = () => {
                 <button
                   type="button"
                   className="text-white  bg-amber-600 hover:bg-amber-800   rounded-3xl  px-8 py-3 text-center mr-2 mb-2 "
-                >
-                  Tham gia ngay
+                  >
+                  {t("slider.button")}
                 </button>
               </div>
             </div>
