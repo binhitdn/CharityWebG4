@@ -89,9 +89,7 @@ const Navbar = ({ toggleSidebar }) => {
             <a href="#" className="flex">
               <div className="flex flex-row space-x-2 justify-center items-center">
                 <Image src="/logo.png" width={70} height={70} />
-                <p className="text-white text-2xl font-bold">
-                  Smile Eyes Charity
-                </p>
+                <p className="text-white  font-bold">Smile Eyes Charity</p>
               </div>
             </a>
           </Link>
