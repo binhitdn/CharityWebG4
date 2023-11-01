@@ -16,7 +16,7 @@ import Image from "next/image";
 import COLORS from "../../constant/color";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
-  const { t } = useTranslation("transaltionFooter");
+  const { t } = useTranslation("translationFooter");
   return (
     <div style={{ backgroundColor: COLORS.secondary }}>
       <div
