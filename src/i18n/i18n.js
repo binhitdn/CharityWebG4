@@ -42,6 +42,7 @@ i18n.use(initReactI18next).init({
       translationContact: translationContact.ja,
       translationContributors: translationContributors.ja,
       translationBlog: translationBlog.ja,
+      translationNavbar: translationNavbar.ja,
     },
   },
   lng: "en",
