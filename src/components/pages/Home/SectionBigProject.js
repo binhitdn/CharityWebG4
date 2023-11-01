@@ -3,6 +3,7 @@ import Button from "../../Button";
 import { useTranslation } from "react-i18next";
 
 function SectionBigProject() {
+  const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
   const programbig = {
@@ -44,7 +45,7 @@ function SectionBigProject() {
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div className="mb-8">
               <div className="mb-8">
-                <span className="text-lg">Dự án lớn</span>
+                <span className="text-lg">{t("big.project")}</span>
                 <h2 className="text-4xl font-bold mb-4 text-blue-900">
                   {title}
                 </h2>
@@ -52,10 +53,10 @@ function SectionBigProject() {
               <p className="mb-8">{content}</p>
             </div>
             <div>
-              <p>Địa điểm</p>
+              <p>{t("SectionBigProject.place")}</p>
             </div>
             <a href="about.html" className="btn btn-primary text-blue-600">
-              Xem chi tiết
+              {t("SectionBigProject.detail")}
             </a>
             <Button className="btn">Be A Contribute</Button>
           </div>
