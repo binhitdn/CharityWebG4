@@ -68,7 +68,7 @@ export default function Home() {
                   className="rounded-lg shadow-md"
                   width="300"
                   height="200"
-                  src={programs[0].videoUrl} // Sử dụng URL video từ chương trình đầu tiên
+                  src={programs[0].videoUrl}
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

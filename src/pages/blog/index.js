@@ -91,10 +91,10 @@ const Blog = () => {
                   All
                 </button>
                 <button className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
-                  Travel
+                  Charity
                 </button>
                 <button className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
-                  Lifestyle
+                  Health
                 </button>
               </div>
               <div>
