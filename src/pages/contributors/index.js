@@ -47,7 +47,7 @@ const Contributor = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             {contributors.map((contributor) => (
               <div key={contributor.id} className="px-20">
-                <div>
+                <div className="flex flex-col justify-center items-center">
                   <div>
                     <img
                       src={contributor.avatar}
@@ -55,7 +55,7 @@ const Contributor = () => {
                       className="rounded-full w-40 h-40"
                     />
                   </div>
-                  <div className="text-center">
+                  <div>
                     <h3 className="text-xl font-bold">{contributor.name}</h3>
                     <p>{contributor.role}</p>
                   </div>
@@ -71,7 +71,7 @@ const Contributor = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
           {contributors.map((contributor) => (
             <div key={contributor.id} className="px-20">
-              <div>
+              <div className="flex flex-col justify-center items-center">
                 <div>
                   <img
                     src={contributor.avatar}
@@ -79,7 +79,7 @@ const Contributor = () => {
                     className="rounded-full w-40 h-40"
                   />
                 </div>
-                <div className="text-center">
+                <div>
                   <h3 className="text-xl font-bold">{contributor.name}</h3>
                   <p>{contributor.role}</p>
                 </div>
