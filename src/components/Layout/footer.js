@@ -28,25 +28,25 @@ const Footer = () => {
             <div className="col-span-1 flex flex-row space-x-3">
               <FaMapMarkedAlt className="w-12 h-12 text-amber-600  p-1" />
               <div className="space-y-2">
-                <p className="text-white">ADDRESS</p>
+                <p className="text-white">{t("footer.address-title")}</p>
                 <p className="text-white font-medium">
-                  Phường Hòa Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng
+                  {t("footer.address")}
                 </p>
               </div>
             </div>
             <div className="col-span-1 flex flex-row space-x-3">
               <FaPhoneAlt className="w-12 h-12 text-amber-600  p-1" />
               <div className="space-y-2">
-                <p className="text-white">PHONES</p>
+                <p className="text-white">{t("footer.phone")}</p>
                 <p className="text-white font-medium">+84 123 123 124</p>
               </div>
             </div>
             <div className="col-span-1 flex flex-row space-x-3">
               <FaRegClock className="w-12 h-12 text-amber-600  p-1" />
               <div className="space-y-2">
-                <p className="text-white">WORKING HOURS</p>
+                <p className="text-white">{t("footer.working_title")}</p>
                 <p className="text-white font-medium">
-                  MON-SAT: 07:00 - 17:00 SUN: CLOSED
+                {t("footer.working")}
                 </p>
               </div>
             </div>
@@ -56,14 +56,14 @@ const Footer = () => {
               <Image src="/logo.png" width={100} height={100} />
 
               <p className="text-white">
-                Charity is a non-profit organization aiming to help children
+              {t("footer.mokuteki")}
               </p>
             </div>
             <div className="col-span-1 space-y-8"></div>
             <div className="col-span-1 space-y-8">
               <div className="flex flex-col space-y-2">
                 <p className="text-white font-medium">
-                  Charity is a non-profit organization aiming to help children
+                {t("footer.mokuteki")}
                 </p>
                 <p className="border-solid border border-amber-500  w-1/4 "></p>
               </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <div className="flex flex-row items-center space-x-4">
                   <FaMapMarkerAlt className="w-6 h-6 text-white  font-light" />
                   <p className="text-white">
-                    Phường Hòa Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng
+                  {t("footer.address")}
                   </p>
                 </div>
                 <div className="flex flex-row items-center space-x-4">
@@ -88,7 +88,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-row items-center space-x-4">
                   <FaCalendarWeek className="w-6 h-6 text-white " />
-                  <p className="text-white">Mon-Sat: 07:00 - 17:00</p>
+                  <p className="text-white"> {t("footer.working")}</p>
                 </div>
               </div>
             </div>
