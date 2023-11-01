@@ -68,41 +68,37 @@ const Blog = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <main className="main">
-      <div className="slider-area2 flex items-center">
+    <main>
+      <div className="flex items-center">
         <div className="container mx-auto">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="hero-cap hero-cap2 pt-70 text-center mt-5">
-                <h2 className="text-2xl font-bold text-gray-800">Blog</h2>
-              </div>
-              <div className="text-center mt-5 text-gray-600">
-                <p>
-                  Đây là nơi chia sẻ những hoạt động từ thiện của chúng tôi. Hãy
-                  cùng chúng tôi chia sẻ những điều tốt đẹp đến mọi người.
-                </p>
-              </div>
-            </div>
+          <div className="pt-70 text-center mt-5">
+            <h2 className="text-2xl font-bold text-gray-800">Blog</h2>
+          </div>
+          <div className="text-center mt-5 text-gray-600">
+            <p>
+              Đây là nơi chia sẻ những hoạt động từ thiện của chúng tôi. Hãy
+              cùng chúng tôi chia sẻ những điều tốt đẹp đến mọi người.
+            </p>
           </div>
         </div>
       </div>
-      <section className="blog_area py-12">
+      <section className="py-12">
         <div className="container mx-auto">
-          <div className="mb-5 mb-lg-0">
+          <div className="mb-5">
             <div className="flex items-center justify-between mb-4">
               <div className="flex space-x-4">
-                <button className="btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
+                <button className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
                   All
                 </button>
-                <button className="btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
+                <button className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
                   Travel
                 </button>
-                <button className="btn bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
+                <button className="bg-gray-200 text-gray-700 hover:bg-gray-300 px-4 py-2 rounded">
                   Lifestyle
                 </button>
               </div>
               <div>
-                <ul className="pagination flex space-x-2">
+                <ul className=" flex space-x-2">
                   {Array.from(
                     { length: Math.ceil(blogs.length / blogsPerPage) },
                     (_, index) => (
