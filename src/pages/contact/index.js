@@ -50,7 +50,7 @@ function Contact() {
             Contact Us
           </h2>
           <p className="mb-8 lg:mb-16 font-light text-center sm:text-xl">
-            Need help? Send us a message and we'll get back to you as soon as
+            Need help? Send us a message and we will get back to you as soon as
           </p>
           <form className="space-y-8">
             <div>
