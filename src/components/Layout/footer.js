@@ -14,8 +14,9 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import COLORS from "../../constant/color";
-
-const footer = () => {
+import { useTranslation } from "react-i18next";
+const Footer = () => {
+  const { t } = useTranslation("translationFooter");
   return (
     <div style={{ backgroundColor: COLORS.secondary }}>
       <div
@@ -135,4 +136,4 @@ const footer = () => {
     </div>
   );
 };
-export default footer;
+export default Footer;
