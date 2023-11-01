@@ -103,7 +103,7 @@ const Contributor = () => {
               className="rounded-full w-40 h-40 mx-auto"
             />
             <div className="text-center pb-10 pt-5">
-              <h3 className="text-xl font-bold">Đinh THị Đông Phương</h3>
+              <h3 className="text-xl font-bold">Đinh Thị Đông Phương</h3>
               <p className="text-center text-purple-500  w-1/2 mx-auto italic text-2xl">
                 Với niềm đam mê không ngừng, chúng tôi đã thực hiện các dự án và
                 chương trình từ thiện có tầm ảnh hưởng, giúp cải thiện cuộc sống
