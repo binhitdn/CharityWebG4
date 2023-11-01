@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import "../../../node_modules/flag-icons/css/flag-icons.min.css";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   const { t, i18n } = useTranslation();
   const router = useRouter();
 
@@ -106,6 +106,7 @@ const Navbar = () => {
               className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-4"
               aria-expanded="false"
+              onClick={toggleSidebar}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -138,59 +139,6 @@ const Navbar = () => {
             className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-4"
           >
-            {/* <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">
-              <li>
-                <Link href="/">
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-yellow-600  md:hover:text-yellow-500 md:p-0 "
-                    aria-current="page"
-                  >
-                    {t("navbar.home")}
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/achievements">
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white   md:hover:text-yellow-500 md:p-0 "
-                  >
-                    {t("navbar.achievements")}
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contributors">
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white   md:hover:text-yellow-500 md:p-0 "
-                  >
-                    {t("navbar.contributors")}
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog">
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white   md:hover:text-yellow-500 md:p-0 "
-                  >
-                    {t("navbar.blog")}
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact">
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white  md:hover:text-yellow-500 md:p-0 "
-                  >
-                    {t("navbar.contact")}
-                  </a>
-                </Link>
-              </li>
-            </ul> */}
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">
               {navItems.map((item) => (
                 <li key={item.name}>
