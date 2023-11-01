@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Home() {
   // Hiển thị mã ngôn ngữ hiện tại
+  const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
   console.log(i18n.language);
   const programs = [
@@ -36,13 +37,14 @@ export default function Home() {
       videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
     },
   ];
+  
   return (
     <div>
       <Slider />
       <SectionBigProject />
       <div className="text-center py-16">
-        <h1 className="text-3xl font-bold">DỰ ÁN CỤ THỂ</h1>
-        <h2 className="text-3xl font-bold">Các chương trình sắp tới</h2>
+        <h1 className="text-3xl font-bold">{t("detail.title")}</h1>
+        <h2 className="text-3xl font-bold">{t("index.next")}</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-40 py-8">
         {programs.map((program, index) => (
@@ -55,7 +57,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p>
-                  <strong>Thời gian: {program.time}</strong>
+                  <strong>{t("index.time")}: {program.time}</strong>
                 </p>
                 <p className="text-justify text-gray-700 my-4">
                   {program.description}
@@ -86,7 +88,7 @@ export default function Home() {
               <div className="flex mb-2 items-center justify-between">
                 <div>
                   <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
-                    Số lượt quyên góp
+                    {t("index.donation")}
                   </span>
                 </div>
                 <div className="text-right">
@@ -104,13 +106,13 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-between mt-4">
               <button className="btn bg-blue-500 hover:bg-blue-700 text-white mr-2">
-                Xem chi tiết
+              {t("SectionBigProject.detail")}
               </button>
               <button className="btn bg-green-500 hover:bg-green-700 text-white mr-2">
-                Quyên góp ngay
+                {t("index.donate")}
               </button>
               <a href="about.html" className="text-blue-500 hover:underline">
-                Báo cáo
+                {t("index.report")}
               </a>
             </div>
           </div>
