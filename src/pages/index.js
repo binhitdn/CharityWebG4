@@ -44,16 +44,16 @@ export default function Home() {
         <h1 className="text-3xl font-bold">DỰ ÁN CỤ THỂ</h1>
         <h2 className="text-3xl font-bold">Các chương trình sắp tới</h2>
       </div>
-      <div className="grid grid-cols-2 gap-8 px-40 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-40 py-8">
         {programs.map((program, index) => (
           <div
             className="bg-white p-8 rounded-lg shadow-md"
             id={`donate${index}`}
             key={index}
           >
-            <div className="flex items-center justify-between mb-4 gap-8">
+            <h3 className="text-2xl font-bold mb-4">{program.title}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h3 className="text-2xl font-bold mb-4">{program.title}</h3>
                 <p>
                   <strong>Thời gian: {program.time}</strong>
                 </p>
@@ -61,16 +61,18 @@ export default function Home() {
                   {program.description}
                 </p>
               </div>
-              <iframe
-                className="rounded-lg shadow-md"
-                width="300"
-                height="200"
-                src={programs[0].videoUrl} // Sử dụng URL video từ chương trình đầu tiên
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <div className="w-1/2">
+                <iframe
+                  className="rounded-lg shadow-md"
+                  width="300"
+                  height="200"
+                  src={programs[0].videoUrl} // Sử dụng URL video từ chương trình đầu tiên
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
             <div className="flex items-center justify-between mb-4">
               <div className="text-sm font-semibold text-gray-600">
