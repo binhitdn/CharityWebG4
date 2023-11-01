@@ -8,7 +8,7 @@ import translationAchievements from "../languages/translationAchievements";
 import translationContact from "../languages/translationContact";
 import translationContributors from "../languages/translationContributors";
 import translationBlog from "../languages/translationBlog";
-import transaltionFooter from "../languages/translationFooter";
+import translationFooter from "../languages/translationFooter";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -19,7 +19,7 @@ i18n.use(initReactI18next).init({
       translationContact: translationContact.en,
       translationContributors: translationContributors.en,
       translationBlog: translationBlog.en,
-      translationFooter: transaltionFooter.en,
+      translationFooter: translationFooter.en,
     },
     vi: {
       translation: translationNavbar.vi,
@@ -28,7 +28,7 @@ i18n.use(initReactI18next).init({
       translationContact: translationContact.vi,
       translationContributors: translationContributors.vi,
       translationBlog: translationBlog.vi,
-      translationFooter: transaltionFooter.vi,
+      translationFooter: translationFooter.vi,
     },
     fr: {
       translation: translationNavbar.fr,
@@ -37,7 +37,7 @@ i18n.use(initReactI18next).init({
       translationContact: translationContact.fr,
       translationContributors: translationContributors.fr,
       translationBlog: translationBlog.fr,
-      transaltionFooter: transaltionFooter.fr,
+      translationFooter: translationFooter.fr,
     },
     ja: {
       translation: translationNavbar.ja,
@@ -46,8 +46,7 @@ i18n.use(initReactI18next).init({
       translationContact: translationContact.ja,
       translationContributors: translationContributors.ja,
       translationBlog: translationBlog.ja,
-      translationNavbar: translationNavbar.ja,
-      transaltionFooter: transaltionFooter.ja,
+      translationFooter: translationFooter.ja,
     },
   },
   lng: "en",

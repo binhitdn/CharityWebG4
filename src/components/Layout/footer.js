@@ -16,7 +16,7 @@ import Image from "next/image";
 import COLORS from "../../constant/color";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
-  const { t } = useTranslation("translationFooter");
+  const { t } = useTranslation("transaltionFooter");
   return (
     <div style={{ backgroundColor: COLORS.secondary }}>
       <div
@@ -29,9 +29,7 @@ const Footer = () => {
               <FaMapMarkedAlt className="w-12 h-12 text-amber-600  p-1" />
               <div className="space-y-2">
                 <p className="text-white">{t("footer.address-title")}</p>
-                <p className="text-white font-medium">
-                  {t("footer.address")}
-                </p>
+                <p className="text-white font-medium">{t("footer.address")}</p>
               </div>
             </div>
             <div className="col-span-1 flex flex-row space-x-3">
@@ -45,9 +43,7 @@ const Footer = () => {
               <FaRegClock className="w-12 h-12 text-amber-600  p-1" />
               <div className="space-y-2">
                 <p className="text-white">{t("footer.working_title")}</p>
-                <p className="text-white font-medium">
-                {t("footer.working")}
-                </p>
+                <p className="text-white font-medium">{t("footer.working")}</p>
               </div>
             </div>
           </div>
@@ -55,24 +51,18 @@ const Footer = () => {
             <div className="col-span-1 space-y-8">
               <Image src="/logo.png" width={100} height={100} />
 
-              <p className="text-white">
-              {t("footer.mokuteki")}
-              </p>
+              <p className="text-white">{t("footer.mokuteki")}</p>
             </div>
             <div className="col-span-1 space-y-8"></div>
             <div className="col-span-1 space-y-8">
               <div className="flex flex-col space-y-2">
-                <p className="text-white font-medium">
-                {t("footer.mokuteki")}
-                </p>
+                <p className="text-white font-medium">{t("footer.mokuteki")}</p>
                 <p className="border-solid border border-amber-500  w-1/4 "></p>
               </div>
               <div className="flex flex-col space-y-4">
                 <div className="flex flex-row items-center space-x-4">
                   <FaMapMarkerAlt className="w-6 h-6 text-white  font-light" />
-                  <p className="text-white">
-                  {t("footer.address")}
-                  </p>
+                  <p className="text-white">{t("footer.address")}</p>
                 </div>
                 <div className="flex flex-row items-center space-x-4">
                   <FaPhone className="w-6 h-6 text-white " />
