@@ -1,4 +1,5 @@
 import React from "react";
+import SectionSponsor from "../../components/pages/Contributors/SectionSponsor";
 
 const contributors = [
   {
@@ -66,7 +67,7 @@ const Contributor = () => {
         </div>
         {/* Nhà tài trợ */}
         <div className="section-tittle section-tittle2 text-center mb-10">
-          <h2 className="text-3xl font-bold pt-10">Nhà tài trợ</h2>
+          <h2 className="text-3xl font-bold pt-10">Nhà hảo tâm</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
           {contributors.map((contributor) => (
@@ -112,6 +113,14 @@ const Contributor = () => {
             </div>
           </div>
         </div>
+        <div className="row justify-center pt-20">
+          <div className="col-xl-12 col-lg-7 col-md-10 col-sm-10">
+            <div className="section-tittle section-tittle2 text-center mb-10">
+              <h2 className="text-3xl font-bold">Nhà tài trợ</h2>
+            </div>
+          </div>
+        </div>
+        <SectionSponsor />
       </div>
     </div>
   );
