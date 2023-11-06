@@ -21,7 +21,7 @@ const Slider = () => {
         }}
         modules={[Autoplay, Navigation]}
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div
             className="h-screen bg-no-repeat bg-cover bg-center"
             style={{
@@ -39,7 +39,32 @@ const Slider = () => {
                 <button
                   type="button"
                   className="text-white  bg-amber-600 hover:bg-amber-800   rounded-3xl  px-8 py-3 text-center mr-2 mb-2 "
-                  >
+                >
+                  {t("slider.button")}
+                </button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide> */}
+        <SwiperSlide>
+          <div
+            className="h-screen bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: `url(https://dailyasianage.com/library/1680640489_5.jpg)`,
+            }}
+          >
+            <div className="h-screen bg-black bg-opacity-10 ">
+              <div className="h-screen flex flex-col justify-center items-center space-y-6">
+                <p className="text-8xl text-white font-bold">
+                  {t("slider.title")}
+                </p>
+                <p className="text-5xl font-light text-white text-center">
+                  {t("slider.subtitle")}
+                </p>
+                <button
+                  type="button"
+                  className="text-white  bg-amber-600 hover:bg-amber-800   rounded-3xl  px-8 py-3 text-center mr-2 mb-2 "
+                >
                   {t("slider.button")}
                 </button>
               </div>
