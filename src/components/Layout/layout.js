@@ -12,7 +12,7 @@ export const Layout = ({ children }) => {
   };
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Meta />
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar show={showSidebar} setter={setShowSidebar} />
@@ -20,7 +20,7 @@ export const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 export default Layout;

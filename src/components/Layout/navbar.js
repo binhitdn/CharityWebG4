@@ -12,14 +12,16 @@ import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import "../../../node_modules/flag-icons/css/flag-icons.min.css";
 import Dropdowns from "../../components/Dropdown";
+import { useEffect, useState } from "react";
 
 const Navbar = ({ toggleSidebar }) => {
   const { t, i18n } = useTranslation();
   const router = useRouter();
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
   const navItems = [
     {
       name: t("navbar.home"),
@@ -56,6 +58,21 @@ const Navbar = ({ toggleSidebar }) => {
     backgroundPosition: "0 50%",
     paddingLeft: "40px",
   };
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const imageSize = windowSize.width < 640 ? 30 : 70;
 
   return (
     <div>
@@ -95,16 +112,19 @@ const Navbar = ({ toggleSidebar }) => {
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">
             <a href="#" className="flex">
-              <div className="flex flex-row space-x-2 justify-center items-center">
-                <Image src="/logo.png" width={70} height={70} />
-                <p className="text-white  font-bold">Smile Eyes Charity</p>
+              <div className="flex flex-row space-x-2 justify-center items-center ">
+                <Image src="/logo.png" width={imageSize} height={imageSize} />
+                <p className="text-white font-bold center">
+                  {" "}
+                  Smile Eyes Charity
+                </p>
               </div>
             </a>
           </Link>
           <div className="flex md:order-2">
             <button
               type="button"
-              className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500   rounded-3xl  px-5 py-2.5 text-center mr-3 md:mr-0 "
+              className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0"
             >
               {t("navbar.donate")}
             </button>

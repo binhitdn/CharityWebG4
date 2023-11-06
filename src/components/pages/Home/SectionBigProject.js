@@ -84,7 +84,7 @@ function SectionBigProject() {
             <div>
               <p>{t("SectionBigProject.place")}</p>
             </div>
-            <a href="about.html" className="btn btn-primary text-blue-600">
+            <a href="" className="btn btn-primary text-blue-600">
               {t("SectionBigProject.detail")}
             </a>
             <Button className="btn">Be A Contribute</Button>
