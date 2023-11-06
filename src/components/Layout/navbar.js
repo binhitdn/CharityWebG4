@@ -11,8 +11,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import "../../../node_modules/flag-icons/css/flag-icons.min.css";
-import  Dropdowns from "../../components/Dropdown"
-
+import Dropdowns from "../../components/Dropdown";
 
 const Navbar = ({ toggleSidebar }) => {
   const { t, i18n } = useTranslation();
@@ -49,16 +48,15 @@ const Navbar = ({ toggleSidebar }) => {
     fr: "/france-flag.png",
     ja: "/japan-flag.png",
   };
-  
+
   const languageStyles = {
     backgroundImage: `url(${languageImages[i18n.language]})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "30px 30px",
-   backgroundPosition: "0 50%",
+    backgroundPosition: "0 50%",
     paddingLeft: "40px",
   };
 
-  
   return (
     <div>
       <div style={{ backgroundColor: "#01470c" }} className="mobile-hidden">
@@ -82,10 +80,9 @@ const Navbar = ({ toggleSidebar }) => {
               </div>
             </div>
           </div>
-                <div className="ml-4">
-            <Dropdowns onChange={changeLanguage} languageImages={languageImages} />
+          <div className="ml-4">
+            <Dropdowns i18n={i18n} />
           </div>
-
 
           <div className="flex flex-row space-x-4  justify-center items-center ">
             <FaFacebook className="w-6 h-6 text-white" />
