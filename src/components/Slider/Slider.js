@@ -30,10 +30,10 @@ const Slider = () => {
           >
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
-                <p className="text-7xl text-white font-bold">
+                <p className="text-8xl text-white font-bold">
                   {t("slider.title")}
                 </p>
-                <p className="text-2xl font-light text-white text-center">
+                <p className="text-5xl font-light text-white text-center">
                   {t("slider.subtitle")}
                 </p>
                 <button

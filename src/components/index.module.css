@@ -1,0 +1,28 @@
+/* Trong file CSS của bạn */
+/* Định dạng nút dropdown */
+.custom-dropdown .dropdown-toggle {
+  background-color: #4caf50; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Không có viền */
+  border-radius: 5px; /* Góc bo tròn */
+  padding: 10px 20px; /* Kích thước nút */
+  transition: all 0.3s; /* Hiệu ứng khi hover */
+}
+
+.custom-dropdown .dropdown-toggle:hover {
+  background-color: #45a049; /* Màu nền khi hover */
+}
+
+/* Định dạng danh sách dropdown */
+.custom-dropdown .dropdown-menu {
+  background-color: #f1f1f1; /* Màu nền danh sách dropdown */
+  border: none; /* Không có viền */
+}
+
+.custom-dropdown .dropdown-item {
+  color: #333; /* Màu chữ danh sách dropdown */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #ddd; /* Màu nền khi hover danh sách dropdown */
+}
