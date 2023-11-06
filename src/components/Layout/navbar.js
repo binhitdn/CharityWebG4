@@ -11,7 +11,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import "../../../node_modules/flag-icons/css/flag-icons.min.css";
-import Dropdowns from "../Dropdown";
+import { Dropdown } from "bootstrap";
 
 const Navbar = ({ toggleSidebar }) => {
   const { t, i18n } = useTranslation();
@@ -42,6 +42,20 @@ const Navbar = ({ toggleSidebar }) => {
       link: "/contact",
     },
   ];
+  const languageImages = {
+    en: "/logo.png",
+    vi: "/vn.jpg",
+    fr: "/france-flag.png",
+    ja: "/japan-flag.png",
+  };
+
+  const languageStyles = {
+    backgroundImage: `url(${languageImages[i18n.language]})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "30px 30px",
+    backgroundPosition: "0 50%",
+    paddingLeft: "40px",
+  };
 
   return (
     <div>
@@ -67,8 +81,18 @@ const Navbar = ({ toggleSidebar }) => {
             </div>
           </div>
           <div className="ml-4">
-            <Dropdowns i18n={i18n} />
+            {/* <select
+              onChange={(e) => changeLanguage(e.target.value)}
+              className="bg-green-500 text-white text-xl font-bold rounded-lg p-2 shadow-lg"
+            >
+              <option value="en">English</option>
+              <option value="vi">Vietnamese</option>
+              <option value="fr">French</option>
+              <option value="ja">Japanese</option>
+            </select> */}
+            <Dropdown i18n={i18n} />
           </div>
+
           <div className="flex flex-row space-x-4  justify-center items-center ">
             <FaFacebook className="w-6 h-6 text-white" />
             <FaInstagram className="w-6 h-6 text-white" />
@@ -96,7 +120,7 @@ const Navbar = ({ toggleSidebar }) => {
             <button
               data-collapse-toggle="mobile-menu-4"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
               aria-controls="mobile-menu-4"
               aria-expanded="false"
               onClick={() => toggleSidebar()}
@@ -129,7 +153,7 @@ const Navbar = ({ toggleSidebar }) => {
             </button>
           </div>
           <div
-            className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1 text-2xl"
             id="mobile-menu-4"
           >
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">

@@ -130,10 +130,9 @@ export default function Home() {
   return (
     <div>
       <Slider />
-
       <SectionBigProject />
       <div className="text-center py-16">
-        <h1 className="text-3xl font-bold">{t("detail.title")}</h1>
+        <h1 className="text-5xl font-bold">{t("detail.title")}</h1>
         {/* <h2 className="text-3xl font-bold">{t("index.next")}</h2> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-40 py-8">
@@ -143,31 +142,31 @@ export default function Home() {
             id={`donate${index}`}
             key={index}
           >
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-4xl font-bold mb-4">
               {program[LANG_CODE].title}
             </h3>
+            <p>
+              <strong className="text-2xl font-bold mb-4">
+                {t("index.time")}: {program[LANG_CODE].time}
+              </strong>
+            </p>
+            <div>
+              <iframe
+                className="rounded-lg shadow-md"
+                width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
+                height="400" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                src={program[LANG_CODE].videoUrl}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p>
-                  <strong>
-                    {t("index.time")}: {program[LANG_CODE].time}
-                  </strong>
-                </p>
-                <p className="text-justify text-gray-700 my-4">
+                <p className="text-justify text-gray-700 my-4 ">
                   {program[LANG_CODE].description}
                 </p>
-              </div>
-              <div className="w-1/2 ">
-                <iframe
-                  className="rounded-lg shadow-md"
-                  width="300"
-                  height="200"
-                  src={program[LANG_CODE].videoUrl}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
               </div>
             </div>
             <div className="flex items-center justify-between mb-4">
@@ -200,15 +199,38 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between mt-4">
-              <button className="btn bg-blue-500 hover:bg-blue-700 text-white mr-2">
-                {t("SectionBigProject.detail")}
-              </button>
-              <button className="btn bg-green-500 hover:bg-green-700 text-white mr-2">
-                {t("index.donate")}
-              </button>
-              <a href="about.html" className="text-blue-500 hover:underline">
-                {t("index.report")}
-              </a>
+              <div className="flex items-center">
+                <img
+                  src="/ct.png"
+                  alt="Image"
+                  className="mr-2"
+                  style={{ width: "25px", height: "25px" }}
+                />
+                <button className="btn btn-primary">
+                  {t("SectionBigProject.detail")}
+                </button>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src="/dn.jpg"
+                  alt="Image"
+                  className="mr-2"
+                  style={{ width: "30px", height: "30px" }}
+                />
+
+                <button className="btn btn-success">{t("index.donate")}</button>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src="/bc.jpg"
+                  alt="Image"
+                  className="mr-2"
+                  style={{ width: "40px", height: "40px" }}
+                />{" "}
+                <a href="about.html" className="btn btn-link">
+                  {t("index.report")}
+                </a>
+              </div>
             </div>
           </div>
         ))}
@@ -218,7 +240,7 @@ export default function Home() {
       {/* dự án đang thực hiện */}
       <div className="text-center py-16">
         {/* <h1 className="text-3xl font-bold">{t("detail.title")}</h1> */}
-        <h2 className="text-3xl font-bold">{t("index.next")}</h2>
+        <h2 className="text-5xl font-bold">{t("index.next")}</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-40 py-8">
         {programs.map((program, index) => (
@@ -227,31 +249,31 @@ export default function Home() {
             id={`donate${index}`}
             key={index}
           >
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-4xl font-bold mb-4">
               {program[LANG_CODE].title}
             </h3>
+            <p>
+              <strong className="text-2xl font-bold mb-4">
+                {t("index.time")}: {program[LANG_CODE].time}
+              </strong>
+            </p>
+            <div>
+              <iframe
+                className="rounded-lg shadow-md"
+                width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
+                height="400" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                src={program[LANG_CODE].videoUrl}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p>
-                  <strong>
-                    {t("index.time")}: {program[LANG_CODE].time}
-                  </strong>
-                </p>
                 <p className="text-justify text-gray-700 my-4">
                   {program[LANG_CODE].description}
                 </p>
-              </div>
-              <div className="w-1/2 ">
-                <iframe
-                  className="rounded-lg shadow-md"
-                  width="300"
-                  height="200"
-                  src={program[LANG_CODE].videoUrl}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
               </div>
             </div>
             <div className="flex items-center justify-between mb-4">
@@ -284,19 +306,41 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between mt-4">
-              <button className="btn bg-blue-500 hover:bg-blue-700 text-white mr-2">
-                {t("SectionBigProject.detail")}
-              </button>
-              <button className="btn bg-green-500 hover:bg-green-700 text-white mr-2">
-                {t("index.donate")}
-              </button>
-              <a href="about.html" className="text-blue-500 hover:underline">
-                {t("index.report")}
-              </a>
+              <div className="flex items-center">
+                <img
+                  src="/ct.png"
+                  alt="Image"
+                  className="mr-2"
+                  style={{ width: "25px", height: "25px" }}
+                />
+                <button className="btn btn-primary">
+                  {t("SectionBigProject.detail")}
+                </button>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src="/dn.jpg"
+                  alt="Image"
+                  className="mr-2"
+                  style={{ width: "30px", height: "30px" }}
+                />
+
+                <button className="btn btn-success">{t("index.donate")}</button>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src="/bc.jpg"
+                  alt="Image"
+                  className="mr-2"
+                  style={{ width: "40px", height: "40px" }}
+                />{" "}
+                <a href="about.html" className="btn btn-link">
+                  {t("index.report")}
+                </a>
+              </div>
             </div>
           </div>
         ))}
-        {/* Hiển thị video */}
       </div>
     </div>
 

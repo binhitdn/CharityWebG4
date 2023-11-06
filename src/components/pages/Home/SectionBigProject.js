@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
 
@@ -37,37 +37,64 @@ function SectionBigProject() {
   };
 
   const { title, content, video } = programbig[LANG_CODE];
+  const [tymCount, setTymCount] = useState(0);
+
+  useEffect(() => {
+    // Kiểm tra xem đã lưu trạng thái tymCount trong Local Storage chưa
+    const savedTymCount = localStorage.getItem("tymCount");
+    if (savedTymCount) {
+      // Nếu có, sử dụng giá trị từ Local Storage
+      setTymCount(parseInt(savedTymCount, 10));
+    }
+  }, []);
+
+  // Hàm xử lý khi click vào trái tim
+  const handleTymClick = () => {
+    const newTymCount = tymCount + 1;
+
+    // Cập nhật giá trị tymCount trong Local Storage
+    localStorage.setItem("tymCount", newTymCount.toString());
+
+    // Cập nhật trạng thái tymCount trong React
+    setTymCount(newTymCount);
+  };
 
   return (
     <section className="py-12">
+      <div className="mb-8 text-center">
+        {" "}
+        {/* Thêm class text-center để căn giữa nội dung */}
+        <span className="text-5xl font-bold">{t("big.project")}</span>
+      </div>
+      <div className="mb-8 text-center">
+        {" "}
+        {/* Thêm class text-center để căn giữa nội dung */}
+        <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
+      </div>
+
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div className="mb-8">
-              <div className="mb-8">
-                <span className="text-lg">{t("big.project")}</span>
-                <h2 className="text-4xl font-bold mb-4 text-blue-900">
-                  {title}
-                </h2>
-              </div>
-              <p className="mb-8">{content}</p>
+              <div className="mb-8"></div>
+              <p className="mb-8 text-2xl">{content}</p>
+              <p className="mb-8 text-2xl">{content}</p>
+              <p className="mb-8 text-2xl">{content}</p>
             </div>
             <div>
               <p>{t("SectionBigProject.place")}</p>
             </div>
-            <a
-              href="https://drive.google.com/file/d/1FOtMgIyNB5_v_9YwaIHJsc_rpV9LPJtR/view?usp=sharing"
-              className="btn btn-primary text-blue-600"
-            >
+            <a href="about.html" className="btn btn-primary text-blue-600">
               {t("SectionBigProject.detail")}
             </a>
             <Button className="btn">Be A Contribute</Button>
           </div>
+
           <div className="w-full lg:w-1/2 px-4">
-            <div className="pt-16">
+            <div>
               <iframe
+                className="w-full"
                 height="315"
-                width="560"
                 src={video}
                 title="YouTube video player"
                 frameBorder="0"
