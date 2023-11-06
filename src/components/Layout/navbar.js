@@ -11,7 +11,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import "../../../node_modules/flag-icons/css/flag-icons.min.css";
-import { Dropdown } from "bootstrap";
+import Dropdowns from "../../components/Dropdown";
 
 const Navbar = ({ toggleSidebar }) => {
   const { t, i18n } = useTranslation();
@@ -81,16 +81,7 @@ const Navbar = ({ toggleSidebar }) => {
             </div>
           </div>
           <div className="ml-4">
-            {/* <select
-              onChange={(e) => changeLanguage(e.target.value)}
-              className="bg-green-500 text-white text-xl font-bold rounded-lg p-2 shadow-lg"
-            >
-              <option value="en">English</option>
-              <option value="vi">Vietnamese</option>
-              <option value="fr">French</option>
-              <option value="ja">Japanese</option>
-            </select> */}
-            <Dropdown i18n={i18n} />
+            <Dropdowns i18n={i18n} />
           </div>
 
           <div className="flex flex-row space-x-4  justify-center items-center ">
