@@ -48,7 +48,7 @@ const translationNavbar = {
     "navbar.blog": "Blog",
   },
   ja: {
-    "navbar.address": "Quận Ngũ Hành Sơn, Thành phố Đà Nẵng",
+    "navbar.address": "ホアクイ区、グーハンソン区、ダナン市",
     "navbar.phone": "(0481) 123 987 2411",
     "navbar.time": "Mon-Sat: 07:00 - 17:00",
     "navbar.language": "Tiếng Nhật",

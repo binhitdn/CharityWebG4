@@ -13,107 +13,124 @@ export default function Home() {
       vi: {
         title: "Nấu ăn cho em 1",
         time: "9/2023 - 3/2024",
-        description: "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
+        description:
+          "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
         progress: {
           current: "18.000.000đ",
           goal: "20.000.000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
       en: {
         title: "Cooking for Kids 1",
         time: "9/2023 - 3/2024",
-        description: "Children are a vulnerable group and are heavily affected by poverty...",
+        description:
+          "Children are a vulnerable group and are heavily affected by poverty...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
       ja: {
         title: "子供のための料理 1",
         time: "9/2023 - 3/2024",
-        description: "子供は脆弱なグループであり、貧困の影響を強く受けています...",
+        description:
+          "子供は脆弱なグループであり、貧困の影響を強く受けています...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
       fr: {
         title: "Cuisiner pour les enfants 1",
         time: "9/2023 - 3/2024",
-        description: "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
+        description:
+          "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
     },
     {
       vi: {
         title: "Nấu ăn cho em 1",
         time: "9/2023 - 3/2024",
-        description: "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
+        description:
+          "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
         progress: {
           current: "18.000.000đ",
           goal: "20.000.000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
       en: {
         title: "Cooking for Kids 1",
         time: "9/2023 - 3/2024",
-        description: "Children are a vulnerable group and are heavily affected by poverty...",
+        description:
+          "Children are a vulnerable group and are heavily affected by poverty...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
       ja: {
         title: "子供のための料理 1",
         time: "9/2023 - 3/2024",
-        description: "子供は脆弱なグループであり、貧困の影響を強く受けています...",
+        description:
+          "子供は脆弱なグループであり、貧困の影響を強く受けています...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
       fr: {
         title: "Cuisiner pour les enfants 1",
         time: "9/2023 - 3/2024",
-        description: "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
+        description:
+          "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl: "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl:
+          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
       },
-    }
+    },
   ];
-  
+
   return (
     <div>
       <Slider />
+
       <SectionBigProject />
       <div className="text-center py-16">
         <h1 className="text-3xl font-bold">{t("detail.title")}</h1>
@@ -126,11 +143,15 @@ export default function Home() {
             id={`donate${index}`}
             key={index}
           >
-            <h3 className="text-2xl font-bold mb-4">{program[LANG_CODE].title}</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              {program[LANG_CODE].title}
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p>
-                  <strong>{t("index.time")}: {program[LANG_CODE].time}</strong>
+                  <strong>
+                    {t("index.time")}: {program[LANG_CODE].time}
+                  </strong>
                 </p>
                 <p className="text-justify text-gray-700 my-4">
                   {program[LANG_CODE].description}
@@ -151,7 +172,8 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-between mb-4">
               <div className="text-sm font-semibold text-gray-600">
-                {program[LANG_CODE].progress.current} / {program[LANG_CODE].progress.goal}
+                {program[LANG_CODE].progress.current} /{" "}
+                {program[LANG_CODE].progress.goal}
               </div>
               <div className="text-sm font-semibold text-green-500">
                 {program[LANG_CODE].progress.percentage}
@@ -179,7 +201,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-between mt-4">
               <button className="btn bg-blue-500 hover:bg-blue-700 text-white mr-2">
-              {t("SectionBigProject.detail")}
+                {t("SectionBigProject.detail")}
               </button>
               <button className="btn bg-green-500 hover:bg-green-700 text-white mr-2">
                 {t("index.donate")}
@@ -205,11 +227,15 @@ export default function Home() {
             id={`donate${index}`}
             key={index}
           >
-            <h3 className="text-2xl font-bold mb-4">{program[LANG_CODE].title}</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              {program[LANG_CODE].title}
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p>
-                  <strong>{t("index.time")}: {program[LANG_CODE].time}</strong>
+                  <strong>
+                    {t("index.time")}: {program[LANG_CODE].time}
+                  </strong>
                 </p>
                 <p className="text-justify text-gray-700 my-4">
                   {program[LANG_CODE].description}
@@ -230,7 +256,8 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-between mb-4">
               <div className="text-sm font-semibold text-gray-600">
-                {program[LANG_CODE].progress.current} / {program[LANG_CODE].progress.goal}
+                {program[LANG_CODE].progress.current} /{" "}
+                {program[LANG_CODE].progress.goal}
               </div>
               <div className="text-sm font-semibold text-green-500">
                 {program[LANG_CODE].progress.percentage}
@@ -258,7 +285,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-between mt-4">
               <button className="btn bg-blue-500 hover:bg-blue-700 text-white mr-2">
-              {t("SectionBigProject.detail")}
+                {t("SectionBigProject.detail")}
               </button>
               <button className="btn bg-green-500 hover:bg-green-700 text-white mr-2">
                 {t("index.donate")}

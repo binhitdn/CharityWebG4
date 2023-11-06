@@ -55,7 +55,10 @@ function SectionBigProject() {
             <div>
               <p>{t("SectionBigProject.place")}</p>
             </div>
-            <a href="about.html" className="btn btn-primary text-blue-600">
+            <a
+              href="https://drive.google.com/file/d/1FOtMgIyNB5_v_9YwaIHJsc_rpV9LPJtR/view?usp=sharing"
+              className="btn btn-primary text-blue-600"
+            >
               {t("SectionBigProject.detail")}
             </a>
             <Button className="btn">Be A Contribute</Button>
@@ -63,8 +66,8 @@ function SectionBigProject() {
           <div className="w-full lg:w-1/2 px-4">
             <div className="pt-16">
               <iframe
-                className="w-full"
                 height="315"
+                width="560"
                 src={video}
                 title="YouTube video player"
                 frameBorder="0"
