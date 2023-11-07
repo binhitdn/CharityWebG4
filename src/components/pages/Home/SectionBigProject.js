@@ -10,7 +10,7 @@ function SectionBigProject() {
     vi: {
       title:
         "DỰ ÁN PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
-        time: "Thời gian: 9/2023 - 3/2024",
+      time: "Thời gian: 9/2023 - 3/2024",
 
       content:
         "Cụm dân cư Pà-Căng mới cách cầu Xơi đường Hồ Chí Minh 3km đường bộ. Làng nằm bên bờ con sông Dakmy hiền hòa và phía sau là những dãy núi mây phủ sớm chiều êm đềm nên thơ. ...",
@@ -19,7 +19,7 @@ function SectionBigProject() {
     en: {
       title:
         "DEVELOPING NEW PA-CANG VILLAGE, CA DY COMMUNE, NAM GIANG DISTRICT",
-        time: "Time: 9/2023 - 3/2024",
+      time: "Time: 9/2023 - 3/2024",
       content:
         "The new Pa-Cang residential cluster is 3 km by road from Xoi bridge on Ho Chi Minh Road. The village is located on the banks of the gentle Dak-my River. Behind the village are the cloud-covered mountains with peaceful scenery. ...",
       video: "https://www.youtube.com/embed/3_JHZXBMUho",
@@ -35,7 +35,7 @@ function SectionBigProject() {
     fr: {
       title:
         "Village Pa-Cang du peuple Cotu au Vietnam le développement durable",
-        time: "Time: 9/2023 - 3/2024",
+      time: "Time: 9/2023 - 3/2024",
 
       content:
         "Nous sommes au centre du Vietnam, près de Da Nang. Le village de montagne Pa-Cang se trouve à 3 km du pont Xoi, sur la route Ho Chi Minh. Il s'étend sur les rives de la douce rivière Dak-My. ...",
@@ -43,7 +43,7 @@ function SectionBigProject() {
     },
   };
 
-  const { title,time,content, video, } = programbig[LANG_CODE];
+  const { title, time, content, video, } = programbig[LANG_CODE];
   const [tymCount, setTymCount] = useState(0);
 
   useEffect(() => {
@@ -122,7 +122,7 @@ function SectionBigProject() {
               <span className="ml-2">{tymCount}</span>
             </div>
 
-         
+
           </div>
           <div className="w-full lg:w-1/2 px-4">
             <div>

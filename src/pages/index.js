@@ -11,49 +11,50 @@ export default function Home() {
   const programs = [
     {
       vi: {
-        title: "Nấu ăn cho em 1",
+        title:
+          "Dự án hỗ trợ xây dựng mô hình kinh tế vườn ở làng Pà Căng mới của người cơ tư",
         time: "9/2023 - 3/2024",
         description:
-          "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
+          "Các hộ gia đình ở làng Pà Căng mới có điện nước đầy đủ. Mỗi hộ có diện tích vườn trên 500m2...",
         progress: {
           current: "18.000.000đ",
           goal: "20.000.000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/jKwQ8ork7Bw",
       },
       en: {
-        title: "Cooking for Kids 1",
+        title:
+          "The project supports the construction of a garden economic model in the new Pa Cang village of private investors",
         time: "9/2023 - 3/2024",
         description:
-          "Children are a vulnerable group and are heavily affected by poverty...",
+          "Households in Pa Cang village have full electricity and water. Each household has a garden area of over 500m2...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/TKpN7cVX7y8",
       },
       ja: {
-        title: "子供のための料理 1",
+        title:
+          "コトゥー民族の村における植物園や畜産園モデル構築するためのサポート",
         time: "9/2023 - 3/2024",
         description:
-          "子供は脆弱なグループであり、貧困の影響を強く受けています...",
+          "コトゥー住民のパキャン村には現在、電気と水が供給されている。人々は自分たちの習...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/3owMhK2Bkwc",
       },
       fr: {
-        title: "Cuisiner pour les enfants 1",
+        title:
+          "Project de construction d'un jardin de plantes et d'elevages modele de VILLAGE POPULAIRE DE CO TU  ",
         time: "9/2023 - 3/2024",
         description:
           "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
@@ -63,8 +64,7 @@ export default function Home() {
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/Nyl9VTRZJeA",
       },
     },
     {
@@ -79,8 +79,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/PaIaf8DhVrQ",
       },
       en: {
         title: "Build economic garden models",
@@ -93,8 +92,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/96LUDfTQU0o",
       },
       ja: {
         title: "ガーデン経済モデルの構築",
@@ -107,8 +105,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/1OSXd4xcsyI",
       },
       fr: {
         title: "Construire un modèle économique de jardin",
@@ -121,8 +118,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/d1A8bHeoQOA",
       },
     },
   ];
@@ -153,8 +149,8 @@ export default function Home() {
             <div>
               <iframe
                 className="rounded-lg shadow-md"
-                width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
-                height="500" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                width="100%"
+                height="500"
                 src={program[LANG_CODE].videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
@@ -163,8 +159,11 @@ export default function Home() {
               ></iframe>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <p className="text-justify text-gray-700 my-4 ">
+              <div style={{ width: "100%" }}>
+                <p
+                  className="text-justify text-gray-700 my-4 overflow-hidden overflow-ellipsis whitespace-nowrap"
+                  style={{ width: "100%" }}
+                >
                   {program[LANG_CODE].description}
                 </p>
               </div>
@@ -260,8 +259,8 @@ export default function Home() {
             <div>
               <iframe
                 className="rounded-lg shadow-md"
-                width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
-                height="500" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                width="100%"
+                height="500"
                 src={program[LANG_CODE].videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
@@ -270,8 +269,11 @@ export default function Home() {
               ></iframe>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <p className="text-justify text-gray-700 my-4">
+              <div style={{ width: "100%" }}>
+                <p
+                  className="text-justify text-gray-700 my-4 overflow-hidden overflow-ellipsis whitespace-nowrap"
+                  style={{ width: "100%" }}
+                >
                   {program[LANG_CODE].description}
                 </p>
               </div>
