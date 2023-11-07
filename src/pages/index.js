@@ -143,7 +143,7 @@ export default function Home() {
             key={index}
           >
             <h3 className="text-4xl font-bold mb-4">
-              {program[LANG_CODE].title}
+              {program[LANG_CODE].title.length > 30 ? program[LANG_CODE].title.slice(0, 30) + "..." : program[LANG_CODE].title }
             </h3>
             <p>
               <strong className="text-2xl font-bold mb-4">
