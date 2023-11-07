@@ -4,6 +4,7 @@ import Footer from "./footer";
 import Meta from "./meta";
 import Sidebar from "./Sidebar";
 import React from "react";
+import GoToTop from "../GoToTop";
 export const Layout = ({ children }) => {
   const [showSidebar, setShowSidebar] = React.useState(false);
 
@@ -12,7 +13,7 @@ export const Layout = ({ children }) => {
   };
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden relative">
       <Meta />
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar show={showSidebar} setter={setShowSidebar} />
@@ -20,6 +21,7 @@ export const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Footer />
+      <GoToTop />
     </div>
   );
 };
