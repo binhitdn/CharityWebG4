@@ -85,15 +85,15 @@ const Navbar = ({ toggleSidebar }) => {
             >
               <div className="flex flex-row space-x-2">
                 <FaMapMarkerAlt className="w-5 h-5 text-white" />
-                <p>{t("navbar.address")}</p>
+                <strong>{t("navbar.address")}</strong>
               </div>
               <div className="flex flex-row space-x-2">
                 <FaMobileAlt className="w-5 h-5 text-white" />
-                <p> (0481) 123 987 2411</p>
+                <strong> (0481) 123 987 2411</strong>
               </div>
               <div className="flex flex-row space-x-2">
                 <FaRegClock className="w-5 h-5 text-white" />
-                <p>Mon-Sat: 07:00 - 17:00</p>
+                <strong>Mon-Sat: 07:00 - 17:00</strong>
               </div>
             </div>
           </div>
@@ -114,14 +114,14 @@ const Navbar = ({ toggleSidebar }) => {
             <a href="#" className="flex">
               <div className="flex flex-row space-x-2 justify-center items-center ">
                 <Image src="/logo.png" width={imageSize} height={imageSize} />
-                <p className="text-white font-bold center">
+                <strong className="text-white center text-2xl">
                   {" "}
                   Smile Eyes Charity
-                </p>
+                </strong>
               </div>
             </a>
           </Link>
-          <div className="flex md:order-2">
+          <div className="flex md:order-2 text-2xl">
             <button
               type="button"
               className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0"

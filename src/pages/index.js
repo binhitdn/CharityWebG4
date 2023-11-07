@@ -154,7 +154,7 @@ export default function Home() {
               <iframe
                 className="rounded-lg shadow-md"
                 width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
-                height="400" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                height="500" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
                 src={program[LANG_CODE].videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
@@ -261,7 +261,7 @@ export default function Home() {
               <iframe
                 className="rounded-lg shadow-md"
                 width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
-                height="400" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                height="500" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
                 src={program[LANG_CODE].videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
