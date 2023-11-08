@@ -138,7 +138,14 @@ export default function Home() {
             id={`donate${index}`}
             key={index}
           >
-            <h3 className="text-4xl font-bold mb-4">
+            <h3
+              className="text-4xl font-bold mb-4"
+              style={{
+                minHeight: "100px",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
               {program[LANG_CODE].title}
             </h3>
             <p>
