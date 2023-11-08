@@ -21,8 +21,7 @@ export default function Home() {
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/jKwQ8ork7Bw",
       },
       en: {
         title: "Cooking for Kids 1",
@@ -35,8 +34,7 @@ export default function Home() {
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/TKpN7cVX7y8",
       },
       ja: {
         title: "子供のための料理 1",
@@ -49,8 +47,7 @@ export default function Home() {
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/3owMhK2Bkwc",
       },
       fr: {
         title: "Cuisiner pour les enfants 1",
@@ -63,8 +60,7 @@ export default function Home() {
           percentage: "80%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        videoUrl: "https://www.youtube.com/embed/Nyl9VTRZJeA",
       },
     },
     {
@@ -79,8 +75,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-          "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/PaIaf8DhVrQ",
       },
       en: {
         title: "Build economic garden models",
@@ -93,8 +88,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/96LUDfTQU0o",
       },
       ja: {
         title: "ガーデン経済モデルの構築",
@@ -107,8 +101,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/1OSXd4xcsyI",
       },
       fr: {
         title: "Construire un modèle économique de jardin",
@@ -121,8 +114,7 @@ export default function Home() {
           percentage: "20%",
         },
         contributors: 34562,
-        videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+        videoUrl: "https://www.youtube.com/embed/d1A8bHeoQOA",
       },
     },
   ];
@@ -153,8 +145,8 @@ export default function Home() {
             <div>
               <iframe
                 className="rounded-lg shadow-md"
-                width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
-                height="500" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                width="100%"
+                height="500"
                 src={program[LANG_CODE].videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
@@ -163,8 +155,11 @@ export default function Home() {
               ></iframe>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <p className="text-justify text-gray-700 my-4 ">
+              <div style={{ width: "100%" }}>
+                <p
+                  className="text-justify text-gray-700 my-4 overflow-hidden overflow-ellipsis whitespace-nowrap"
+                  style={{ width: "100%" }}
+                >
                   {program[LANG_CODE].description}
                 </p>
               </div>
@@ -260,8 +255,8 @@ export default function Home() {
             <div>
               <iframe
                 className="rounded-lg shadow-md"
-                width="100%" // Thay đổi kích thước theo ý muốn, ví dụ: "100%" cho toàn bộ chiều rộng
-                height="500" // Thay đổi kích thước theo ý muốn, ví dụ: "400" cho chiều cao 400 pixels
+                width="100%"
+                height="500"
                 src={program[LANG_CODE].videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
@@ -270,8 +265,11 @@ export default function Home() {
               ></iframe>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <p className="text-justify text-gray-700 my-4">
+              <div style={{ width: "100%" }}>
+                <p
+                  className="text-justify text-gray-700 my-4 overflow-hidden overflow-ellipsis whitespace-nowrap"
+                  style={{ width: "100%" }}
+                >
                   {program[LANG_CODE].description}
                 </p>
               </div>
