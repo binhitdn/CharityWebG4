@@ -1,5 +1,3 @@
-import Slider from "../components/Slider/Slider";
-import SectionBigProject from "../components/pages/Home/SectionBigProject";
 import { useTranslation } from "react-i18next";
 
 export default function UpcommingProject() {
@@ -136,7 +134,14 @@ export default function UpcommingProject() {
             id={`donate${index}`}
             key={index}
           >
-            <h3 className="text-4xl font-bold mb-4">
+            <h3
+              className="text-4xl font-bold mb-4"
+              style={{
+                minHeight: "120px",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
               {program[LANG_CODE].title}
             </h3>
             <p>
