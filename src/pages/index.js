@@ -258,7 +258,7 @@ export default function Home() {
             <h3
               className="text-4xl font-bold mb-4"
               style={{
-                minHeight: "120px",
+                minHeight: "150px",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
               }}
