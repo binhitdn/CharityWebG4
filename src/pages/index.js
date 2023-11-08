@@ -69,60 +69,60 @@ export default function Home() {
     },
     {
       vi: {
-        title: "Nấu ăn cho em 1",
-        time: "9/2023 - 3/2024",
+        title: "XÂY DỰNG MÔ HÌNH KINH TẾ VƯỜN",
+        time: " 01/11/2023 ~ 01/11/2025",
         description:
-          "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
+          "Mỗi hộ có diện tích vườn trên 500m2. Có điện nước đầy đủ. Hơn nữa bà con có tập quán trồng trọt và chăn nuôi. Dự án nhằm xây dựng mô hình trồng trọt và chăn nuôi quy mô nhỏ trong cụm dân cư. Dự án sẽ đồng hành cùng bà con trong quá trình xây dựng, phát triển mô hình. Qua đó, chia sẻ kiến thức khoa họa và kỹ năng làm vườn, giúp bà con hiểu sâu sắc về làm kinh tế vườn và tự xây dựng được mô hình kinh tế vườn cho gia đình của mình. Kết quả là vườn nhà được sử dụng hiệu quả, mức sống được nâng cao. Hơn nữa, góp phần làm môi trường xanh sạch đẹp.",
         progress: {
-          current: "18.000.000đ",
-          goal: "20.000.000đ",
-          percentage: "80%",
+          current: "4,000,000đ",
+          goal: "20,000,000đ",
+          percentage: "20%",
         },
         contributors: 34562,
         videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+          "https://youtu.be/PaIaf8DhVrQ",
       },
       en: {
-        title: "Cooking for Kids 1",
-        time: "9/2023 - 3/2024",
+        title: "Build economic garden models",
+        time: " 01/11/2023 ~ 01/11/2025",
         description:
-          "Children are a vulnerable group and are heavily affected by poverty...",
+          "Each household has a garden area of over 500m2. Full electricity and water available. Furthermore, people have the habit of growing crops and raising livestock. The project aims to build small-scale crop and livestock farming models in residential clusters. The project will accompany people in the process of building and developing the model. Thereby, sharing scientific knowledge and gardening skills helps people deeply understand garden economics and build their own garden economic model for their families. As a result, home gardens are used effectively and living standards are improved. Furthermore, it contributes to a clean and beautiful green environment.",
         progress: {
-          current: "18,000,000đ",
+          current: "4,000,000đ",
           goal: "20,000,000đ",
-          percentage: "80%",
+          percentage: "20%",
         },
         contributors: 34562,
         videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        "https://youtu.be/PaIaf8DhVrQ",
       },
       ja: {
-        title: "子供のための料理 1",
-        time: "9/2023 - 3/2024",
+        title: "ガーデン経済モデルの構築",
+        time: " 01/11/2023 ~ 01/11/2025",
         description:
-          "子供は脆弱なグループであり、貧困の影響を強く受けています...",
+          "各世帯には500平方メートル以上の庭面積があります。 電気と水道完備。 さらに、人々は作物を育てたり、家畜を飼ったりする習慣を持っています。 このプロジェクトは、住宅クラスターで小規模な農作物および畜産モデルを構築することを目的としています。 このプロジェクトは、モデルの構築と開発のプロセスに人々を伴います。 これにより、科学的知識と園芸スキルを共有することで、人々が園芸経済学を深く理解し、家族のために独自の園芸経済モデルを構築するのに役立ちます。 その結果、家庭菜園が有効活用され、生活水準が向上します。 さらに、清潔で美しい緑の環境づくりにも貢献します。",
         progress: {
-          current: "18,000,000đ",
+          current: "4,000,000đ",
           goal: "20,000,000đ",
-          percentage: "80%",
+          percentage: "20%",
         },
         contributors: 34562,
         videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        "https://youtu.be/PaIaf8DhVrQ",
       },
       fr: {
-        title: "Cuisiner pour les enfants 1",
-        time: "9/2023 - 3/2024",
+        title: "Construire un modèle économique de jardin",
+        time: " 01/11/2023 ~ 01/11/2025",
         description:
-          "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
+          "Chaque foyer dispose d'un jardin de plus de 500 mètres carrés. Entièrement équipé en électricité et eau. De plus, les gens ont l’habitude de cultiver des cultures et d’élever du bétail. Le projet vise à construire un modèle de culture et d’élevage à petite échelle dans des clusters résidentiels. Ce projet implique des personnes dans le processus de construction et de développement de modèles. En partageant des connaissances scientifiques et des compétences horticoles, cela aide les gens à comprendre en profondeur l’économie horticole et à construire leurs propres modèles économiques horticoles pour leurs familles. En conséquence, les jardins familiaux seront mieux utilisés et le niveau de vie s’améliorera. De plus, cela contribue à créer un environnement vert propre et magnifique.",
         progress: {
-          current: "18,000,000đ",
+          current: "4,000,000đ",
           goal: "20,000,000đ",
-          percentage: "80%",
+          percentage: "20%",
         },
         contributors: 34562,
         videoUrl:
-          "https://www.youtube.com/embed/543jwFfCZvg?si=YJz93RMtk3DgjiTk",
+        "https://youtu.be/PaIaf8DhVrQ",
       },
     },
   ];
