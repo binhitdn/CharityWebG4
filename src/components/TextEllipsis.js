@@ -1,11 +1,7 @@
 import React from "react";
 
-function TextEllipsis({ text, limit, style }) {
-  return (
-    <p style={style} className="text-ellipsis">
-      {text.length > limit ? `${text.substring(0, limit)}...` : text}
-    </p>
-  );
+function TextEllipsis({ text, className }) {
+  return <p className={`text-ellipsis min-h-[10rem]  ${className}`}>{text}</p>;
 }
 
 export default TextEllipsis;

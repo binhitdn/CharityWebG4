@@ -11,17 +11,17 @@ const Dropdowns = ({ i18n }) => {
     },
     {
       value: "vi",
-      label: "Vietnamese",
+      label: "Tiếng Việt",
       icon: "https://icons.iconarchive.com/icons/wikipedia/flags/512/VN-Vietnam-Flag-icon.png",
     },
     {
       value: "fr",
-      label: "French",
+      label: "Français",
       icon: "https://icons.iconarchive.com/icons/wikipedia/flags/512/FR-France-Flag-icon.png",
     },
     {
       value: "ja",
-      label: "Japanese",
+      label: "日本語",
       icon: "https://icons.iconarchive.com/icons/wikipedia/flags/512/JP-Japan-Flag-icon.png",
     },
   ];
@@ -43,9 +43,9 @@ const Dropdowns = ({ i18n }) => {
     <Dropdown onSelect={onSelect}>
       <Dropdown.Toggle
         variant="success"
-        className="dropdown-toggle d-flex justify-content-between align-items-center"
+        className="dropdown-toggle d-flex align-items-center"
       >
-        <div className="d-flex align-items-center">
+        <div className="flex-row flex align-items-center">
           <img
             src={selectedOption.icon}
             alt={selectedOption.label}
@@ -56,12 +56,13 @@ const Dropdowns = ({ i18n }) => {
         </div>
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
+      <Dropdown.Menu className="p-0 rounded-10 overflow-hidden">
         {options.map((option) => (
           <Dropdown.Item
             key={option.value}
             eventKey={option.value}
             active={selectedOption.value === option.value}
+            className="d-flex align-items-center"
           >
             <img
               src={option.icon}

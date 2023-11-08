@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 
 export default function DetailProject() {
-  // Hiển thị mã ngôn ngữ hiện tại
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
-  // console.log(i18n.language);
   const programs = [
     {
       vi: {

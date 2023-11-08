@@ -1,11 +1,10 @@
 import { useTranslation } from "react-i18next";
+import TextEllipsis from "../../TextEllipsis";
 
 export default function UpcommingProject() {
-  // Hiển thị mã ngôn ngữ hiện tại
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
-  // console.log(i18n.language);
   const programs = [
     {
       vi: {
@@ -134,16 +133,10 @@ export default function UpcommingProject() {
             id={`donate${index}`}
             key={index}
           >
-            <h3
+            <TextEllipsis
+              text={program[LANG_CODE].title}
               className="text-4xl font-bold mb-4"
-              style={{
-                minHeight: "120px",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-              }}
-            >
-              {program[LANG_CODE].title}
-            </h3>
+            />
             <p>
               <strong className="text-2xl font-bold mb-4">
                 {t("index.time")}: {program[LANG_CODE].time}
@@ -236,7 +229,6 @@ export default function UpcommingProject() {
             </div>
           </div>
         ))}
-        {/* Hiển thị video */}
       </div>
     </div>
   );
