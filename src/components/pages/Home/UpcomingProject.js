@@ -2,7 +2,7 @@ import Slider from "../components/Slider/Slider";
 import SectionBigProject from "../components/pages/Home/SectionBigProject";
 import { useTranslation } from "react-i18next";
 
-export default function Home() {
+export default function UpcommingProject() {
   // Hiển thị mã ngôn ngữ hiện tại
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -125,8 +125,6 @@ export default function Home() {
 
   return (
     <div>
-      <Slider />
-      <SectionBigProject />
       <div className="text-center py-16">
         <h1 className="text-5xl font-bold">{t("detail.title")}</h1>
         {/* <h2 className="text-3xl font-bold">{t("index.next")}</h2> */}
@@ -235,117 +233,6 @@ export default function Home() {
         ))}
         {/* Hiển thị video */}
       </div>
-
-      {/* dự án đang thực hiện */}
-      <div className="text-center py-16">
-        {/* <h1 className="text-3xl font-bold">{t("detail.title")}</h1> */}
-        <h2 className="text-5xl font-bold">{t("index.next")}</h2>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-40 py-8">
-        {programs.map((program, index) => (
-          <div
-            className="bg-white p-8 rounded-lg shadow-md"
-            id={`donate${index}`}
-            key={index}
-          >
-            <h3 className="text-4xl font-bold mb-4">
-              {program[LANG_CODE].title}
-            </h3>
-            <p>
-              <strong className="text-2xl font-bold mb-4">
-                {t("index.time")}: {program[LANG_CODE].time}
-              </strong>
-            </p>
-            <div>
-              <iframe
-                className="rounded-lg shadow-md"
-                width="100%"
-                height="500"
-                src={program[LANG_CODE].videoUrl}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div style={{ width: "100%" }}>
-                <p
-                  className="text-justify text-gray-700 my-4 overflow-hidden overflow-ellipsis whitespace-nowrap"
-                  style={{ width: "100%" }}
-                >
-                  {program[LANG_CODE].description}
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between mb-4">
-              <div className="text-sm font-semibold text-gray-600">
-                {program[LANG_CODE].progress.current} /{" "}
-                {program[LANG_CODE].progress.goal}
-              </div>
-              <div className="text-sm font-semibold text-green-500">
-                {program[LANG_CODE].progress.percentage}
-              </div>
-            </div>
-            <div className="relative pt-1">
-              <div className="flex mb-2 items-center justify-between">
-                <div>
-                  <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
-                    {t("index.donation")}
-                  </span>
-                </div>
-                <div className="text-right">
-                  <span className="text-xs font-semibold inline-block text-green-600">
-                    {program[LANG_CODE].contributors}
-                  </span>
-                </div>
-              </div>
-              <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
-                <div
-                  style={{ width: program[LANG_CODE].progress.percentage }}
-                  className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
-                ></div>
-              </div>
-            </div>
-            <div className="flex items-center justify-between mt-4">
-              <div className="flex items-center">
-                <img
-                  src="/ct.png"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "25px", height: "25px" }}
-                />
-                <button className="btn btn-primary">
-                  {t("SectionBigProject.detail")}
-                </button>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src="/dn.jpg"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "30px", height: "30px" }}
-                />
-
-                <button className="btn btn-success">{t("index.donate")}</button>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src="/bc.jpg"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "40px", height: "40px" }}
-                />{" "}
-                <a href="about.html" className="btn btn-link">
-                  {t("index.report")}
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
-
-    // đang thực hiện
   );
 }
