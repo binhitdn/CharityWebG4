@@ -11,10 +11,11 @@ export default function Home() {
   const programs = [
     {
       vi: {
-        title: "Nấu ăn cho em 1",
+        title:
+          "Dự án hỗ trợ xây dựng mô hình kinh tế vườn ở làng Pà Căng mới của người cơ tư",
         time: "9/2023 - 3/2024",
         description:
-          "Trẻ em là nhóm dễ bị tổn thương và chịu ảnh hưởng mạnh từ nghèo đói...",
+          "Các hộ gia đình ở làng Pà Căng mới có điện nước đầy đủ. Mỗi hộ có diện tích vườn trên 500m2...",
         progress: {
           current: "18.000.000đ",
           goal: "20.000.000đ",
@@ -24,10 +25,11 @@ export default function Home() {
         videoUrl: "https://www.youtube.com/embed/jKwQ8ork7Bw",
       },
       en: {
-        title: "Cooking for Kids 1",
+        title:
+          "The project supports the construction of a garden economic model in the new Pa Cang village of private investors",
         time: "9/2023 - 3/2024",
         description:
-          "Children are a vulnerable group and are heavily affected by poverty...",
+          "Households in Pa Cang village have full electricity and water. Each household has a garden area of over 500m2...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
@@ -37,10 +39,11 @@ export default function Home() {
         videoUrl: "https://www.youtube.com/embed/TKpN7cVX7y8",
       },
       ja: {
-        title: "子供のための料理 1",
+        title:
+          "コトゥー民族の村における植物園や畜産園モデル構築するためのサポート",
         time: "9/2023 - 3/2024",
         description:
-          "子供は脆弱なグループであり、貧困の影響を強く受けています...",
+          "コトゥー住民のパキャン村には現在、電気と水が供給されている。人々は自分たちの習...",
         progress: {
           current: "18,000,000đ",
           goal: "20,000,000đ",
@@ -50,7 +53,8 @@ export default function Home() {
         videoUrl: "https://www.youtube.com/embed/3owMhK2Bkwc",
       },
       fr: {
-        title: "Cuisiner pour les enfants 1",
+        title:
+          "Project de construction d'un jardin de plantes et d'elevages modele de VILLAGE POPULAIRE DE CO TU  ",
         time: "9/2023 - 3/2024",
         description:
           "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
