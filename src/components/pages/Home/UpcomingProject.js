@@ -194,35 +194,20 @@ export default function UpcommingProject() {
               </div>
             </div>
             <div className="flex items-center justify-between mt-4">
-              <div className="flex items-center">
-                <img
-                  src="/ct.png"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "25px", height: "25px" }}
-                />
-                <button className="btn btn-primary">
-                  {t("SectionBigProject.detail")}
-                </button>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src="/dn.jpg"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "30px", height: "30px" }}
-                />
+            <div className="flex items-center">
+              <a href="about.html" style={{ fontSize: '18px' }}>
+                {t("SectionBigProject.detail")}
+              </a>
+            </div>
 
-                <button className="btn btn-success">{t("index.donate")}</button>
+              <div className="flex items-center">
+           
+
+                <button className="btn btn-success" style={{ fontSize: '18px' }}>{t("index.donate")}</button>
               </div>
               <div className="flex items-center">
-                <img
-                  src="/bc.jpg"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "40px", height: "40px" }}
-                />{" "}
-                <a href="about.html" className="btn btn-link">
+               
+                <a href="about.html" className="btn btn-link" style={{ fontSize: '18px' }}>
                   {t("index.report")}
                 </a>
               </div>

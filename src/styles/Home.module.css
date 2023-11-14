@@ -6,6 +6,10 @@
   position: relative;
   z-index: 1;
 }
+/* Add this to your CSS or styles */
+.underlined {
+  text-decoration: underline;
+}
 
 .video-container iframe {
   position: absolute;

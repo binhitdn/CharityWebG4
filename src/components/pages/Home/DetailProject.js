@@ -200,34 +200,20 @@ export default function DetailProject() {
             </div>
             <div className="flex items-center justify-between mt-4">
               <div className="flex items-center">
-                <img
-                  src="/ct.png"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "25px", height: "25px" }}
-                />
-                <button className="btn btn-primary">
+             
+              <a href="about.html "style={{ fontSize: '18px' }}>
                   {t("SectionBigProject.detail")}
-                </button>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src="/dn.jpg"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "30px", height: "30px" }}
-                />
+                </a>
 
-                <button className="btn btn-success">{t("index.donate")}</button>
               </div>
               <div className="flex items-center">
-                <img
-                  src="/bc.jpg"
-                  alt="Image"
-                  className="mr-2"
-                  style={{ width: "40px", height: "40px" }}
-                />{" "}
-                <a href="about.html" className="btn btn-link">
+           
+
+                <button className="btn btn-success" style={{ fontSize: '18px' }}>{t("index.donate")}</button>
+              </div>
+              <div className="flex items-center">
+               
+                <a href="about.html" className="btn btn-link" style={{ fontSize: '18px' }}>
                   {t("index.report")}
                 </a>
               </div>
