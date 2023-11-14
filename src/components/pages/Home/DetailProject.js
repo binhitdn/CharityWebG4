@@ -200,12 +200,11 @@ export default function DetailProject() {
             </div>
             <div className="flex items-center justify-between mt-4">
               <div className="flex items-center">
-             
-              <a href="about.html "style={{ fontSize: '18px' }}>
+                <a  href="about.html" style={{ fontSize: '18px', textDecoration: 'underline' }}>
                   {t("SectionBigProject.detail")}
                 </a>
-
               </div>
+
               <div className="flex items-center">
            
 
