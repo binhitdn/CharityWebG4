@@ -81,6 +81,19 @@ function SectionBigProject() {
 
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4">
+          <div className="w-full lg:w-1/2 px-4">
+            <div>
+              <iframe
+                className="w-full"
+                height="450"
+                src={video}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
             <div className="mb-8">
               <div className="mb-8"></div>
@@ -95,12 +108,8 @@ function SectionBigProject() {
                 alt="Image"
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
-
               />
-              <a
-                href="about.html"
-                className="btn btn-primary text-blue-600"
-              >
+              <a href="about.html" className="btn btn-primary text-blue-600">
                 {t("SectionBigProject.detail")}
               </a>
               <img
@@ -108,7 +117,6 @@ function SectionBigProject() {
                 alt="Image"
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
-
               />
               <Button className="btn" onClick={handleTymClick}>
                 Be A Contribute
@@ -121,26 +129,10 @@ function SectionBigProject() {
               />
               <span className="ml-2">{tymCount}</span>
             </div>
-
-
-          </div>
-          <div className="w-full lg:w-1/2 px-4">
-            <div>
-              <iframe
-                className="w-full"
-                height="450"
-                src={video}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
 export default SectionBigProject;
