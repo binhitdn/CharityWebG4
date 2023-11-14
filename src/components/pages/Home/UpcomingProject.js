@@ -199,18 +199,18 @@ export default function UpcommingProject() {
                 {t("SectionBigProject.detail")}
               </a>
             </div>
-
+            <div className="flex items-center">
+               
+               <a href="about.html" className="btn btn-link" style={{ fontSize: '18px' }}>
+                 {t("index.report")}
+               </a>
+             </div>
               <div className="flex items-center">
            
 
                 <button className="btn btn-success" style={{ fontSize: '18px' }}>{t("index.donate")}</button>
               </div>
-              <div className="flex items-center">
-               
-                <a href="about.html" className="btn btn-link" style={{ fontSize: '18px' }}>
-                  {t("index.report")}
-                </a>
-              </div>
+            
             </div>
           </div>
         ))}
