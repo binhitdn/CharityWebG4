@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
-
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -45,7 +44,7 @@ function SectionBigProject() {
 
   const { title, time, content, video, } = programbig[LANG_CODE];
   const [tymCount, setTymCount] = useState(0);
-
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     // Kiểm tra xem đã lưu trạng thái tymCount trong Local Storage chưa
     const savedTymCount = localStorage.getItem("tymCount");
@@ -65,7 +64,15 @@ function SectionBigProject() {
     // Cập nhật trạng thái tymCount trong React
     setTymCount(newTymCount);
   };
-
+  const toggleModal = () => {
+    console.log(1);
+    setShowModal(!showModal);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Xử lý logic đăng ký tại đây
+    // ...
+  };
   return (
     <section className="py-12">
       <div className="mb-8 text-center">
@@ -118,9 +125,98 @@ function SectionBigProject() {
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
               />
-              <Button className="btn" onClick={handleTymClick}>
+              <Button className="btn" onClick={toggleModal}>
                 Be A Contribute
               </Button>
+              
+      {showModal && (
+       <div style={{
+        position: "fixed",
+        left: 0,
+        top: 0,
+        zIndex: 1,
+        width: "100%",
+        height: "100%",
+        overflow: "auto",
+        backgroundColor: "rgba(0, 0, 0, 0.4)",
+      }}>
+        <div style={{
+          backgroundColor: "#fff",
+          margin: "10% auto",
+          padding: "30px",
+          border: "1px solid #888",
+          width: "700px",
+          borderRadius:"20px",
+          boxShadow:"4px 8px grey" 
+        }}>
+          
+          <span
+            style={{
+              color: "#aaa",
+              float: "right",
+              fontSize: "28px",
+              fontWeight: "bold",
+              cursor: "pointer"
+            }}
+            onClick={toggleModal}
+          >
+            &times;
+          </span>
+          <h2>Form đăng ký thành viên</h2>
+          <br />
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Tên đẩy đủ của bạn:</label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <br />
+            <div className="form-group">
+              <label htmlFor="exampleInputPassword1">Email:</label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputPassword1"
+              />
+              <small id="emailHelp" className="form-text text-muted">
+                We'll never share your email with anyone else.
+              </small>
+            </div>
+            <br></br>
+            <div className="form-group">
+              <label htmlFor="exampleInputPassword1">Mật khẩu:</label>
+              <input
+                type="password"
+                className="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <br />
+            <div className="form-group form-check">
+              <label className="form-check-label" htmlFor="exampleCheck1">
+                Tôi đồng ý 
+              </label>
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="exampleCheck1"
+              />
+            </div>
+            <br />
+            {/* Thêm các trường đăng ký vào đây */}
+  
+            <button type="submit" className="btn btn-primary">
+              Đăng ký
+            </button>
+          </form>
+        </div>
+      </div>
+          )}
               <img
                 src="/tym.png"
                 alt="Image"
