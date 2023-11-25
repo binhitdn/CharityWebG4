@@ -64,6 +64,17 @@ function SectionBigProject() {
     // Cập nhật trạng thái tymCount trong React
     setTymCount(newTymCount);
   };
+    const handleShareClick = () => {
+      const linkToCopy = 'https://korehalinku.com'; // Thay thế đường dẫn bằng liên kết thực tế cần chia sẻ
+  
+      navigator.clipboard.writeText(linkToCopy)
+        .then(() => {
+            alert("đã copy link")
+        })
+        .catch((error) => {
+          console.error('Lỗi khi sao chép liên kết:', error);
+        });
+    }
   const toggleModal = () => {
     console.log(1);
     setShowModal(!showModal);
@@ -129,94 +140,94 @@ function SectionBigProject() {
                 Be A Contribute
               </Button>
               
-      {showModal && (
-       <div style={{
-        position: "fixed",
-        left: 0,
-        top: 0,
-        zIndex: 1,
-        width: "100%",
-        height: "100%",
-        overflow: "auto",
-        backgroundColor: "rgba(0, 0, 0, 0.4)",
-      }}>
-        <div style={{
-          backgroundColor: "#fff",
-          margin: "10% auto",
-          padding: "30px",
-          border: "1px solid #888",
-          width: "700px",
-          borderRadius:"20px",
-          boxShadow:"4px 8px grey" 
-        }}>
-          
-          <span
-            style={{
-              color: "#aaa",
-              float: "right",
-              fontSize: "28px",
-              fontWeight: "bold",
-              cursor: "pointer"
-            }}
-            onClick={toggleModal}
-          >
-            &times;
-          </span>
-          <h2>Form đăng ký thành viên</h2>
-          <br />
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Tên đẩy đủ của bạn:</label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-              
-            </div>
-            <br />
-            <div className="form-group">
-              <label htmlFor="exampleInputPassword1">Email:</label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputPassword1"
-              />
-              <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
-            </div>
-            <br></br>
-            <div className="form-group">
-              <label htmlFor="exampleInputPassword1">Mật khẩu:</label>
-              <input
-                type="password"
-                className="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <br />
-            <div className="form-group form-check">
-              <label className="form-check-label" htmlFor="exampleCheck1">
-                Tôi đồng ý 
-              </label>
-              <input
-                type="checkbox"
-                className="form-check-input"
-                id="exampleCheck1"
-              />
-            </div>
-            <br />
-            {/* Thêm các trường đăng ký vào đây */}
-  
-            <button type="submit" className="btn btn-primary">
-              Đăng ký
-            </button>
-          </form>
-        </div>
-      </div>
-          )}
+                {showModal && (
+                <div style={{
+                  position: "fixed",
+                  left: 0,
+                  top: 0,
+                  zIndex: 1,
+                  width: "100%",
+                  height: "100%",
+                  overflow: "auto",
+                  backgroundColor: "rgba(0, 0, 0, 0.4)",
+                }}>
+                  <div style={{
+                    backgroundColor: "#fff",
+                    margin: "10% auto",
+                    padding: "30px",
+                    border: "1px solid #888",
+                    width: "700px",
+                    borderRadius:"20px",
+                    boxShadow:"4px 8px grey" 
+                  }}>
+                    
+                    <span
+                      style={{
+                        color: "#aaa",
+                        float: "right",
+                        fontSize: "28px",
+                        fontWeight: "bold",
+                        cursor: "pointer"
+                      }}
+                      onClick={toggleModal}
+                    >
+                      &times;
+                    </span>
+                    <h2>Form đăng ký thành viên</h2>
+                    <br />
+                    <form onSubmit={handleSubmit}>
+                      <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">Tên đẩy đủ của bạn:</label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        
+                      </div>
+                      <br />
+                      <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Email:</label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
+                        <small id="emailHelp" className="form-text text-muted">
+                          We'll never share your email with anyone else.
+                        </small>
+                      </div>
+                      <br></br>
+                      <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Mật khẩu:</label>
+                        <input
+                          type="password"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                      <br />
+                      <div className="form-group form-check">
+                        <label className="form-check-label" htmlFor="exampleCheck1">
+                          Tôi đồng ý 
+                        </label>
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          id="exampleCheck1"
+                        />
+                      </div>
+                      <br />
+                      {/* Thêm các trường đăng ký vào đây */}
+            
+                      <button type="submit" className="btn btn-primary">
+                        Đăng ký
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                    )}
               <img
                 src="/tym.png"
                 alt="Image"
@@ -224,6 +235,11 @@ function SectionBigProject() {
                 onClick={handleTymClick}
               />
               <span className="ml-2">{tymCount}</span>
+              <button className="btn btn-warning ml-2" onClick={handleShareClick}>
+                <span style={{color:"#fff"}}>
+                  Share
+                </span>
+              </button>
             </div>
           </div>
         </div>
