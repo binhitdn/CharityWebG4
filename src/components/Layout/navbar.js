@@ -101,20 +101,20 @@ const Navbar = ({ toggleSidebar }) => {
             <Dropdowns i18n={i18n} />
           </div>
 
-          <div className="flex flex-row space-x-4  justify-center items-center ">
+          {/* <div className="flex flex-row space-x-4  justify-center items-center ">
             <FaFacebook className="w-6 h-6 text-white" />
             <FaInstagram className="w-6 h-6 text-white" />
             <FaWhatsapp className="w-6 h-6 text-white" />
-          </div>
+          </div> */}
         </div>
       </div>
       <nav className="px-2 sm:px-4 py-2" style={{ backgroundColor: "#037415" }}>
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">
-            <a href="#" className="flex">
+            <a href="#" className="flex"  style={{ textDecoration: 'none' }}>
               <div className="flex flex-row space-x-2 justify-center items-center ">
                 <Image src="/logo.png" width={imageSize} height={imageSize} />
-                <strong className="text-white center text-2xl">
+                <strong className="text-white center text-lg sm:text-2xl mb:text-2xl">
                   {" "}
                   Smile Eyes Charity
                 </strong>
@@ -124,7 +124,7 @@ const Navbar = ({ toggleSidebar }) => {
           <div className="flex md:order-2 text-2xl">
             <button
               type="button"
-              className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0"
+              className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 mobile-hidden"
             >
               {t("navbar.donate")}
             </button>
@@ -172,6 +172,7 @@ const Navbar = ({ toggleSidebar }) => {
                 <li key={item.name}>
                   <Link href={item.link}>
                     <a
+                    style={{ textDecoration: 'none' }}
                       href="#"
                       className={`block py-2 pr-4 pl-3 text-white  md:hover:text-yellow-500 md:p-0 ${
                         router.pathname === item.link ? "text-yellow-600" : ""

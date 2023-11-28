@@ -1,6 +1,11 @@
 import { t } from "i18next";
 import React from "react";
+<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
+=======
+import FormContact from "../../components/pages/Contact/FormContact";
+import FAQ from "../../components/pages/Contact/FAQ";
+>>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
 
 function Contact() {
 
@@ -9,6 +14,7 @@ function Contact() {
   const LANG_CODE = i18n.language;
   return (
     <div>
+<<<<<<< HEAD
       <section className="dark:bg-green-400 dark:text-gray-100">
         <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
           <p className="p-2 text-sm font-medium track text-center uppercase">
@@ -139,6 +145,10 @@ function Contact() {
           </form>
         </div>
       </section>
+=======
+      <FAQ />
+      <FormContact />
+>>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
     </div>
   );
 }

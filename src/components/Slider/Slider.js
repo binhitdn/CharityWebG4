@@ -21,31 +21,6 @@ const Slider = () => {
         }}
         modules={[Autoplay, Navigation]}
       >
-        {/* <SwiperSlide>
-          <div
-            className="h-screen bg-no-repeat bg-cover bg-center"
-            style={{
-              backgroundImage: `url(https://www.prudential.com.vn/export/sites/prudential-vn/vi/.thu-vien/hinh-anh/pulse-nhip-song-khoe/song-khoe/2020/suc-khoe-tinh-than/bai-viet-minh-cung-di-tu-thien-con-nhe-video-966x543.png)`,
-            }}
-          >
-            <div className="h-screen bg-black bg-opacity-10 ">
-              <div className="h-screen flex flex-col justify-center items-center space-y-6">
-                <p className="text-8xl text-white font-bold">
-                  {t("slider.title")}
-                </p>
-                <p className="text-5xl font-light text-white text-center">
-                  {t("slider.subtitle")}
-                </p>
-                <button
-                  type="button"
-                  className="text-white  bg-amber-600 hover:bg-amber-800   rounded-3xl  px-8 py-3 text-center mr-2 mb-2 "
-                >
-                  {t("slider.button")}
-                </button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide> */}
         <SwiperSlide>
           <div
             className="h-screen bg-no-repeat bg-cover bg-center"
@@ -55,7 +30,11 @@ const Slider = () => {
           >
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
+<<<<<<< HEAD
                 <p className="text-center text-8xl text-white font-bold">
+=======
+                <p className="text-8xl text-white font-bold text-center ">
+>>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
                   {t("slider.title")}
                 </p>
                 <p className="text-5xl font-light text-white text-center">

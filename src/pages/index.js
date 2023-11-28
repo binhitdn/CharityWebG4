@@ -1,5 +1,6 @@
 import Slider from "../components/Slider/Slider";
 import SectionBigProject from "../components/pages/Home/SectionBigProject";
+<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
 import React, { useState } from 'react';
 import Form from "../components/Form/Form";
@@ -189,10 +190,17 @@ export default function Home() {
 
  
 
+=======
+import UpcommingProject from "../components/pages/Home/UpcomingProject";
+import DetailProject from "../components/pages/Home/DetailProject";
+
+export default function Home() {
+>>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
   return (
     <div>
       <Slider />
       <SectionBigProject />
+<<<<<<< HEAD
       <div className="text-center py-16">
         <h1 className="text-5xl font-bold">{t("detail.title")}</h1>
         {/* <h2 className="text-3xl font-bold">{t("index.next")}</h2> */}
@@ -408,5 +416,10 @@ export default function Home() {
     
 
     // đang thực hiện
+=======
+      <UpcommingProject />
+      <DetailProject />
+    </div>
+>>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
   );
 }
