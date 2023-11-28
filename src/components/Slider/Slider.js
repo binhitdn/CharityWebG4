@@ -30,11 +30,7 @@ const Slider = () => {
           >
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
-<<<<<<< HEAD
-                <p className="text-center text-8xl text-white font-bold">
-=======
                 <p className="text-8xl text-white font-bold text-center ">
->>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
                   {t("slider.title")}
                 </p>
                 <p className="text-5xl font-light text-white text-center">
