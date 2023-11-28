@@ -1,6 +1,7 @@
 import React from "react";
 import SectionSponsor from "../../components/pages/Contributors/SectionSponsor";
 import Slider from "../../components/Slider/Slider";
+import { useTranslation } from "react-i18next";
 
 const contributors = [
   {
@@ -37,6 +38,10 @@ const contributors = [
 ];
 
 const Contributor = () => {
+  
+  const { t } = useTranslation("translationContributors");
+  const { i18n } = useTranslation();
+  const LANG_CODE = i18n.language;
   return (
     <div>
       <Slider />
@@ -46,7 +51,7 @@ const Contributor = () => {
 
           <div className="row justify-center">
             <div className="section-tittle section-tittle2 text-center mb-10">
-              <h2 className="text-3xl font-bold pt-10">Tình nguyện viên</h2>
+              <h2 className="text-3xl font-bold pt-10">{t("title")}</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
@@ -71,7 +76,7 @@ const Contributor = () => {
           </div>
           {/* Nhà tài trợ */}
           <div className="section-tittle section-tittle2 text-center mb-10">
-            <h2 className="text-3xl font-bold pt-10">Nhà hảo tâm</h2>
+            <h2 className="text-3xl font-bold pt-10">{t("house")}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
             {contributors.map((contributor) => (
@@ -96,7 +101,7 @@ const Contributor = () => {
           <div className="row justify-center pt-20">
             <div className="col-xl-12 col-lg-7 col-md-10 col-sm-10">
               <div className="section-tittle section-tittle2 text-center mb-10">
-                <h2 className="text-3xl font-bold">Người sáng lập</h2>
+                <h2 className="text-3xl font-bold">{t("creator")}</h2>
               </div>
             </div>
           </div>
@@ -110,9 +115,7 @@ const Contributor = () => {
               <div className="text-center pb-10 pt-5">
                 <h3 className="text-xl font-bold">Đinh Thị Đông Phương</h3>
                 <p className="text-center text-purple-500  w-1/2 mx-auto italic text-2xl">
-                  Với niềm đam mê không ngừng, chúng tôi đã thực hiện các dự án
-                  và chương trình từ thiện có tầm ảnh hưởng, giúp cải thiện cuộc
-                  sống của những người cần giúp đỡ nhất
+                  {t("content")}
                 </p>
               </div>
             </div>
@@ -120,7 +123,7 @@ const Contributor = () => {
           <div className="row justify-center pt-20">
             <div className="col-xl-12 col-lg-7 col-md-10 col-sm-10">
               <div className="section-tittle section-tittle2 text-center mb-10">
-                <h2 className="text-3xl font-bold">Nhà tài trợ</h2>
+                <h2 className="text-3xl font-bold">{t("donator")}</h2>
               </div>
             </div>
           </div>

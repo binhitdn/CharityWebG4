@@ -1,6 +1,8 @@
 import Slider from "../components/Slider/Slider";
 import SectionBigProject from "../components/pages/Home/SectionBigProject";
 import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import Form from "../components/Form/Form";
 
 export default function Home() {
   // Hiển thị mã ngôn ngữ hiện tại
@@ -9,6 +11,64 @@ export default function Home() {
   const LANG_CODE = i18n.language;
   // console.log(i18n.language);
   const programs = [
+    {
+      vi: {
+        title: "Dự án hỗ trợ xây dựng mô hình kinh tế vườn ở làng Pà Căng mới của người cơ tư",
+        time: "9/2023 - 3/2024",
+        description:
+          "Các hộ gia đình ở làng Pà Căng mới có điện nước đầy đủ. Mỗi hộ có diện tích vườn trên 500m2...",
+        progress: {
+          current: "18.000.000đ",
+          goal: "20.000.000đ",
+          percentage: "80%",
+        },
+        contributors: 34562,
+        videoUrl:
+          "https://www.youtube.com/embed/jKwQ8ork7Bw?si=gBcdlq1ShYAtHkw-",
+      },
+      en: {
+        title: "The project supports the construction of a garden economic model in the new Pa Cang village of private investors",
+        time: "9/2023 - 3/2024",
+        description:
+          "Households in Pa Cang village have full electricity and water. Each household has a garden area of over 500m2...",
+        progress: {
+          current: "18,000,000đ",
+          goal: "20,000,000đ",
+          percentage: "80%",
+        },
+        contributors: 34562,
+        videoUrl:
+          "https://www.youtube.com/embed/TKpN7cVX7y8?si=L_ZxkFCZvu_2FwZU",
+      },
+      ja: {
+        title: "コトゥー民族の村における植物園や畜産園モデル構築するためのサポート",
+        time: "9/2023 - 3/2024",
+        description:
+          "コトゥー住民のパキャン村には現在、電気と水が供給されている。人々は自分たちの習...",
+        progress: {
+          current: "18,000,000đ",
+          goal: "20,000,000đ",
+          percentage: "80%",
+        },
+        contributors: 34562,
+        videoUrl:
+          "https://www.youtube.com/embed/3owMhK2Bkwc?si=uwCIm_1PaO8zA_wR",
+      },
+      fr: {
+        title: "Project de construction d'un jardin de plantes et d'elevages modele de VILLAGE POPULAIRE DE CO TU  ",
+        time: "9/2023 - 3/2024",
+        description:
+          "Les enfants sont un groupe vulnérable et sont fortement touchés par la pauvreté...",
+        progress: {
+          current: "18,000,000đ",
+          goal: "20,000,000đ",
+          percentage: "80%",
+        },
+        contributors: 34562,
+        videoUrl:
+          "https://www.youtube.com/embed/Nyl9VTRZJeA?si=NEXR2KkUl1BxCRMK",
+      },
+    },
     {
       vi: {
         title: "Dự án hỗ trợ xây dựng mô hình kinh tế vườn ở làng Pà Căng mới của người cơ tư",
@@ -94,7 +154,7 @@ export default function Home() {
         },
         contributors: 34562,
         videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+          "https://youtu.be/PaIaf8DhVrQ",
       },
       ja: {
         title: "ガーデン経済モデルの構築",
@@ -108,7 +168,7 @@ export default function Home() {
         },
         contributors: 34562,
         videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+          "https://youtu.be/PaIaf8DhVrQ",
       },
       fr: {
         title: "Construire un modèle économique de jardin",
@@ -122,10 +182,12 @@ export default function Home() {
         },
         contributors: 34562,
         videoUrl:
-        "https://youtu.be/PaIaf8DhVrQ",
+          "https://youtu.be/PaIaf8DhVrQ",
       },
     },
   ];
+
+ 
 
   return (
     <div>
@@ -206,7 +268,7 @@ export default function Home() {
                   className="mr-2"
                   style={{ width: "25px", height: "25px" }}
                 />
-                <button className="btn btn-primary">
+                <button className="btn btn-primary" >
                   {t("SectionBigProject.detail")}
                 </button>
               </div>
@@ -217,8 +279,7 @@ export default function Home() {
                   className="mr-2"
                   style={{ width: "30px", height: "30px" }}
                 />
-
-                <button className="btn btn-success">{t("index.donate")}</button>
+                <button className="btn btn-success" >{t("index.donate")}</button>
               </div>
               <div className="flex items-center">
                 <img
@@ -343,6 +404,8 @@ export default function Home() {
         ))}
       </div>
     </div>
+
+    
 
     // đang thực hiện
   );

@@ -1,21 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Achievement = () => {
+  
+  const { t } = useTranslation("translationAchievements");
+  const { i18n } = useTranslation();
+  const LANG_CODE = i18n.language;
   return (
     <main>
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto flex flex-col md:flex-row items-center mb-16">
-          <div className="flex-1 text-center md:text-left mb-8">
+          <div className="flex-1 text-center md:text-left mb-8 mr-10">
             <h2 className="text-4xl font-bold mb-4">
-              Chúng tôi - Đối tác của bạn trong từ thiện
+              {t("title")}
             </h2>
             <p className="text-lg text-gray-700">
-              Với hơn 500 chiến dịch từ thiện thành công, chúng tôi đã tạo ra
-              những thay đổi tích cực trong cuộc sống của nhiều người. Hãy cùng
-              tham gia và hỗ trợ chúng tôi để làm thế giới trở nên tốt đẹp hơn.
+              {t("content")}
             </p>
             <button className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-              Xem thêm
+              {t("button")}
             </button>
           </div>
           <div className="flex-1 justify-center items-center">
@@ -32,7 +35,7 @@ const Achievement = () => {
         <div className="container mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-gray-800">
-              Những gì chúng tôi đã làm được
+              {t("title2")}
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -42,7 +45,7 @@ const Achievement = () => {
                 alt=""
                 className="w-full h-auto mb-4 rounded-lg"
               />
-              <h4 className="text-xl font-semibold mb-2">Donation is Hope</h4>
+              <h4 className="text-xl font-semibold mb-2">{t("hope")}</h4>
               <ul className="text-gray-600">
                 <li>
                   <i className="far fa-clock"></i> 8:30 - 9:30am
@@ -61,7 +64,7 @@ const Achievement = () => {
                 alt=""
                 className="w-full h-auto mb-4 rounded-lg"
               />
-              <h4 className="text-xl font-semibold mb-2">Donation is Hope</h4>
+              <h4 className="text-xl font-semibold mb-2">{t("hope")}</h4>
               <ul className="text-gray-600">
                 <li>
                   <i className="far fa-clock"></i> 8:30 - 9:30am

@@ -2,6 +2,10 @@
   padding: 0 2rem;
 }
 
+* {
+  font-family: 'Poppins' sans-serif;
+}
+
 .video-container {
   position: relative;
   z-index: 1;
@@ -72,8 +76,7 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: 'Poppins', monospace;
 }
 
 .grid {
@@ -124,4 +127,8 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.content {
+  display: none;
 }

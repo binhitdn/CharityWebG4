@@ -55,7 +55,7 @@ const Slider = () => {
           >
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
-                <p className="text-8xl text-white font-bold">
+                <p className="text-center text-8xl text-white font-bold">
                   {t("slider.title")}
                 </p>
                 <p className="text-5xl font-light text-white text-center">
@@ -63,7 +63,7 @@ const Slider = () => {
                 </p>
                 <button
                   type="button"
-                  className="text-white  bg-amber-600 hover:bg-amber-800   rounded-3xl  px-8 py-3 text-center mr-2 mb-2 "
+                  className="text-white  bg-amber-600 hover:bg-amber-800 rounded-3xl  px-8 py-3 text-center mr-2 mb-2 "
                 >
                   {t("slider.button")}
                 </button>

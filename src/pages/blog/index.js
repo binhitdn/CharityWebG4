@@ -72,7 +72,7 @@ const Blog = () => {
       <div className="flex items-center">
         <div className="container mx-auto">
           <div className="pt-70 text-center mt-5">
-            <h2 className="text-2xl font-bold text-gray-800">Blog</h2>
+            <h2 className="text-5xl font-bold text-gray-800">BLOG</h2>
           </div>
           <div className="text-center mt-5 text-gray-600">
             <p>

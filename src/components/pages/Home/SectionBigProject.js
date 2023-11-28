@@ -1,11 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
+import Form from "../../Form/Form";
 
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
+  const [showForm, setShowForm] = useState(false);
+
+  const handleOpenForm = () => {
+    setShowForm(true);
+  };
   const programbig = {
     vi: {
       title:
@@ -67,6 +74,7 @@ function SectionBigProject() {
   };
 
   return (
+
     <section className="py-12">
       <div className="mb-8 text-center">
         {" "}
@@ -76,14 +84,15 @@ function SectionBigProject() {
       <div className="mb-8 text-center">
         {" "}
         {/* Thêm class text-center để căn giữa nội dung */}
-        <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
+
       </div>
 
       <div className="container mx-auto">
-        <div className="flex flex-wrap -mx-4">
-          <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <div className="mb-8">
+        <div className="flex align-items-start-0 flex-wrap -mx-4">
+          <div className="w-full lg:w-1/2 px-4 mb-8">
+            <div className="mb-8 mt-0">
               <div className="mb-8"></div>
+              <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
               <h4 className="text-3xl font-bold mb-4 ">{time}</h4>
 
               <p className="mb-8 text-2xl">{content}</p>
@@ -95,10 +104,9 @@ function SectionBigProject() {
                 alt="Image"
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
-
               />
               <a
-                href="about.html"
+                href={t("SectionBigProject.pdf")}
                 className="btn btn-primary text-blue-600"
               >
                 {t("SectionBigProject.detail")}
@@ -108,9 +116,8 @@ function SectionBigProject() {
                 alt="Image"
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
-
               />
-              <Button className="btn" onClick={handleTymClick}>
+              <Button className="btn" onClick={handleOpenForm}>
                 Be A Contribute
               </Button>
               <img
@@ -121,10 +128,8 @@ function SectionBigProject() {
               />
               <span className="ml-2">{tymCount}</span>
             </div>
-
-
           </div>
-          <div className="w-full lg:w-1/2 px-4">
+          <div className="w-full lg:w-1/2 px-4 mb-4 mt-4">
             <div>
               <iframe
                 className="w-full"
