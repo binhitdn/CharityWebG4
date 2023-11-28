@@ -2,11 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
-<<<<<<< HEAD
-import Form from "../../Form/Form";
-
-=======
->>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -110,28 +105,9 @@ function SectionBigProject() {
       </div>
 
       <div className="container mx-auto">
-<<<<<<< HEAD
         <div className="flex align-items-start-0 flex-wrap -mx-4">
           <div className="w-full lg:w-1/2 px-4 mb-8">
             <div className="mb-8 mt-0">
-=======
-        <div className="flex flex-wrap -mx-4">
-          <div className="w-full lg:w-1/2 px-4">
-            <div>
-              <iframe
-                className="w-full"
-                height="450"
-                src={video}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
-            <div className="mb-8">
->>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
               <div className="mb-8"></div>
               <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
               <h4 className="text-3xl font-bold mb-4 ">{time}</h4>
@@ -146,14 +122,10 @@ function SectionBigProject() {
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
               />
-<<<<<<< HEAD
               <a
                 href={t("SectionBigProject.pdf")}
                 className="btn btn-primary text-blue-600"
               >
-=======
-              <a href="about.html" className="btn btn-primary text-blue-600">
->>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
                 {t("SectionBigProject.detail")}
               </a>
               <img
@@ -162,11 +134,7 @@ function SectionBigProject() {
                 className="w-6 h-6"
                 style={{ width: '35px', height: '35px' }}
               />
-<<<<<<< HEAD
-              <Button className="btn" onClick={handleOpenForm}>
-=======
               <Button className="btn" onClick={toggleModal}>
->>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
                 Be A Contribute
               </Button>
               
@@ -225,7 +193,7 @@ function SectionBigProject() {
                           id="exampleInputPassword1"
                         />
                         <small id="emailHelp" className="form-text text-muted">
-                          We'll never share your email with anyone else.
+                          We will never share your email with anyone else.
                         </small>
                       </div>
                       <br></br>
@@ -265,27 +233,11 @@ function SectionBigProject() {
                 onClick={handleTymClick}
               />
               <span className="ml-2">{tymCount}</span>
-<<<<<<< HEAD
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 px-4 mb-4 mt-4">
-            <div>
-              <iframe
-                className="w-full"
-                height="450"
-                src={video}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-=======
               <button className="btn btn-warning ml-2" onClick={handleShareClick}>
                 <span style={{color:"#fff"}}>
                   Share
                 </span>
               </button>
->>>>>>> c999984ef309e8be635b029ee8624cc2dc49d873
             </div>
           </div>
         </div>
