@@ -5,6 +5,8 @@ import Meta from "./meta";
 import Sidebar from "./Sidebar";
 import React from "react";
 import GoToTop from "../GoToTop";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const Layout = ({ children }) => {
   const [showSidebar, setShowSidebar] = React.useState(false);
 
@@ -22,6 +24,16 @@ export const Layout = ({ children }) => {
       </div>
       <Footer />
       <GoToTop />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={true}
+        closeOnClick={true}
+        rtl={false}
+        draggable={true}
+        pauseOnHover={true}
+      />
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -48,7 +49,7 @@ function SectionBigProject() {
     },
   };
 
-  const { title, time, content, video, } = programbig[LANG_CODE];
+  const { title, time, content, video } = programbig[LANG_CODE];
   const [tymCount, setTymCount] = useState(0);
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
@@ -70,17 +71,18 @@ function SectionBigProject() {
     // Cập nhật trạng thái tymCount trong React
     setTymCount(newTymCount);
   };
-    const handleShareClick = () => {
-      const linkToCopy = 'https://korehalinku.com'; // Thay thế đường dẫn bằng liên kết thực tế cần chia sẻ
-  
-      navigator.clipboard.writeText(linkToCopy)
-        .then(() => {
-            alert("đã copy link")
-        })
-        .catch((error) => {
-          console.error('Lỗi khi sao chép liên kết:', error);
-        });
-    }
+  const handleShareClick = () => {
+    const linkToCopy = "https://korehalinku.com"; // Thay thế đường dẫn bằng liên kết thực tế cần chia sẻ
+
+    navigator.clipboard
+      .writeText(linkToCopy)
+      .then(() => {
+        alert("đã copy link");
+      })
+      .catch((error) => {
+        console.error("Lỗi khi sao chép liên kết:", error);
+      });
+  };
   const toggleModal = () => {
     console.log(1);
     setShowModal(!showModal);
@@ -90,8 +92,11 @@ function SectionBigProject() {
     // Xử lý logic đăng ký tại đây
     // ...
   };
+  const handleRegister = () => {
+    toast.success("Đăng ký thành công");
+    setShowModal(false);
+  };
   return (
-
     <section className="py-12">
       <div className="mb-8 text-center">
         {" "}
@@ -101,7 +106,6 @@ function SectionBigProject() {
       <div className="mb-8 text-center">
         {" "}
         {/* Thêm class text-center để căn giữa nội dung */}
-
       </div>
 
       <div className="container mx-auto">
@@ -120,7 +124,7 @@ function SectionBigProject() {
                 src="/ct.png"
                 alt="Image"
                 className="w-6 h-6"
-                style={{ width: '35px', height: '35px' }}
+                style={{ width: "35px", height: "35px" }}
               />
               <a
                 href={t("SectionBigProject.pdf")}
@@ -132,40 +136,43 @@ function SectionBigProject() {
                 src="/dn.jpg"
                 alt="Image"
                 className="w-6 h-6"
-                style={{ width: '35px', height: '35px' }}
+                style={{ width: "35px", height: "35px" }}
               />
               <Button className="btn" onClick={toggleModal}>
                 Be A Contribute
               </Button>
-              
-                {showModal && (
-                <div style={{
-                  position: "fixed",
-                  left: 0,
-                  top: 0,
-                  zIndex: 1,
-                  width: "100%",
-                  height: "100%",
-                  overflow: "auto",
-                  backgroundColor: "rgba(0, 0, 0, 0.4)",
-                }}>
-                  <div style={{
-                    backgroundColor: "#fff",
-                    margin: "10% auto",
-                    padding: "30px",
-                    border: "1px solid #888",
-                    width: "700px",
-                    borderRadius:"20px",
-                    boxShadow:"4px 8px grey" 
-                  }}>
-                    
+
+              {showModal && (
+                <div
+                  style={{
+                    position: "fixed",
+                    left: 0,
+                    top: 0,
+                    zIndex: 1,
+                    width: "100%",
+                    height: "100%",
+                    overflow: "auto",
+                    backgroundColor: "rgba(0, 0, 0, 0.4)",
+                  }}
+                >
+                  <div
+                    style={{
+                      backgroundColor: "#fff",
+                      margin: "10% auto",
+                      padding: "30px",
+                      border: "1px solid #888",
+                      width: "700px",
+                      borderRadius: "20px",
+                      boxShadow: "4px 8px grey",
+                    }}
+                  >
                     <span
                       style={{
                         color: "#aaa",
                         float: "right",
                         fontSize: "28px",
                         fontWeight: "bold",
-                        cursor: "pointer"
+                        cursor: "pointer",
                       }}
                       onClick={toggleModal}
                     >
@@ -175,14 +182,15 @@ function SectionBigProject() {
                     <br />
                     <form onSubmit={handleSubmit}>
                       <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Tên đẩy đủ của bạn:</label>
+                        <label htmlFor="exampleInputEmail1">
+                          Tên đẩy đủ của bạn:
+                        </label>
                         <input
                           type="email"
                           className="form-control"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
                         />
-                        
                       </div>
                       <br />
                       <div className="form-group">
@@ -207,8 +215,11 @@ function SectionBigProject() {
                       </div>
                       <br />
                       <div className="form-group form-check">
-                        <label className="form-check-label" htmlFor="exampleCheck1">
-                          Tôi đồng ý 
+                        <label
+                          className="form-check-label"
+                          htmlFor="exampleCheck1"
+                        >
+                          Tôi đồng ý
                         </label>
                         <input
                           type="checkbox"
@@ -218,14 +229,18 @@ function SectionBigProject() {
                       </div>
                       <br />
                       {/* Thêm các trường đăng ký vào đây */}
-            
-                      <button type="submit" className="btn btn-primary">
+
+                      <button
+                        type="submit"
+                        className="btn btn-primary"
+                        onClick={handleRegister}
+                      >
                         Đăng ký
                       </button>
                     </form>
                   </div>
                 </div>
-                    )}
+              )}
               <img
                 src="/tym.png"
                 alt="Image"
@@ -233,10 +248,11 @@ function SectionBigProject() {
                 onClick={handleTymClick}
               />
               <span className="ml-2">{tymCount}</span>
-              <button className="btn btn-warning ml-2" onClick={handleShareClick}>
-                <span style={{color:"#fff"}}>
-                  Share
-                </span>
+              <button
+                className="btn btn-warning ml-2"
+                onClick={handleShareClick}
+              >
+                <span style={{ color: "#fff" }}>Share</span>
               </button>
             </div>
           </div>
