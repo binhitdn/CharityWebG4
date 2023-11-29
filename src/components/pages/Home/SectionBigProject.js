@@ -129,8 +129,8 @@ function SectionBigProject() {
               <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
               <h4 className="text-3xl font-bold mb-4 ">{time}</h4>
 
-              <p className="mb-8 text-2xl justify-center">{content}</p>
-              <p className="mb-8 text-2xl">{content}</p>
+              <p className="mb-8 text-xl text-justify">{content}</p>
+              <p className="mb-8 text-xl text-justify">{content}</p>
             </div>
             <div className="flex items-center space-x-4">
               <a href={t("SectionBigProject.pdf")}>
