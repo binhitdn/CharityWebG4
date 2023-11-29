@@ -106,7 +106,7 @@ function SectionBigProject() {
 
       <div className="container mx-auto">
         <div className="flex align-items-start-0 flex-wrap -mx-4">
-          <div className="w-full lg:w-1/2 px-4 mb-8">
+          <div className="w-full lg:w-3/5 px-4 mb-8">
             <div className="mb-8">
               <div className="mb-8"></div>
               <div className="relative pb-9/16">
@@ -123,37 +123,30 @@ function SectionBigProject() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 px-4 mb-8">
+          <div className="w-full lg:w-2/5 px-4 mb-8">
             <div className="mb-8 mt-0">
               <div className="mb-8"></div>
               <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
               <h4 className="text-3xl font-bold mb-4 ">{time}</h4>
 
-              <p className="mb-8 text-2xl">{content}</p>
+              <p className="mb-8 text-2xl justify-center">{content}</p>
               <p className="mb-8 text-2xl">{content}</p>
             </div>
             <div className="flex items-center space-x-4">
-              <img
-                src="/ct.png"
-                alt="Image"
-                className="w-6 h-6"
-                style={{ width: "35px", height: "35px" }}
-              />
-              {/* <a
-                href={t("SectionBigProject.pdf")}
-                className="btn btn-primary text-blue-600"
-              >
+              <a href={t("SectionBigProject.pdf")}>
                 {t("SectionBigProject.detail")}
-              </a> */}
-              <button className="btn btn-primary text-blue-600">
+              </a>
+              {/* <button className="btn btn-primary text-blue-600">
                 {t("SectionBigProject.detail")}
-              </button>
+              </button> */}
+
               <img
-                src="/dn.jpg"
+                src="/tym.png"
                 alt="Image"
-                className="w-6 h-6"
-                style={{ width: "35px", height: "35px" }}
+                className="w-10 h-10 cursor-pointer"
+                onClick={handleTymClick}
               />
+              <span className="ml-2">{tymCount}</span>
               <Button className="btn" onClick={toggleModal}>
                 Be A Contribute
               </Button>
@@ -253,18 +246,20 @@ function SectionBigProject() {
                   </div>
                 </div>
               )}
-              <img
-                src="/tym.png"
-                alt="Image"
-                className="w-10 h-10 cursor-pointer"
-                onClick={handleTymClick}
-              />
-              <span className="ml-2">{tymCount}</span>
+
               <button
-                className="btn btn-warning ml-2"
+                className="btn bg-transparent "
                 onClick={handleShareClick}
               >
-                <span style={{ color: "#fff" }}>Share</span>
+                <span
+                  style={{
+                    color: "#000",
+                    textSize: "20px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Share
+                </span>
               </button>
             </div>
           </div>
