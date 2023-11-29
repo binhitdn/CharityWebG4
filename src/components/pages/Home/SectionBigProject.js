@@ -7,6 +7,7 @@ function SectionBigProject() {
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
   const [showForm, setShowForm] = useState(false);
+  const [showModalDetail, setShowModalDetail] = useState(false);
 
   const handleOpenForm = () => {
     setShowForm(true);
@@ -106,6 +107,23 @@ function SectionBigProject() {
       <div className="container mx-auto">
         <div className="flex align-items-start-0 flex-wrap -mx-4">
           <div className="w-full lg:w-1/2 px-4 mb-8">
+            <div className="mb-8">
+              <div className="mb-8"></div>
+              <div className="relative pb-9/16">
+                <iframe
+                  className="rounded-lg shadow-md"
+                  width="100%"
+                  height="500"
+                  src={video}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 px-4 mb-8">
             <div className="mb-8 mt-0">
               <div className="mb-8"></div>
               <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
@@ -121,12 +139,15 @@ function SectionBigProject() {
                 className="w-6 h-6"
                 style={{ width: "35px", height: "35px" }}
               />
-              <a
+              {/* <a
                 href={t("SectionBigProject.pdf")}
                 className="btn btn-primary text-blue-600"
               >
                 {t("SectionBigProject.detail")}
-              </a>
+              </a> */}
+              <button className="btn btn-primary text-blue-600">
+                {t("SectionBigProject.detail")}
+              </button>
               <img
                 src="/dn.jpg"
                 alt="Image"
@@ -245,23 +266,6 @@ function SectionBigProject() {
               >
                 <span style={{ color: "#fff" }}>Share</span>
               </button>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 px-4 mb-8">
-            <div className="mb-8">
-              <div className="mb-8"></div>
-              <div className="relative pb-9/16">
-                <iframe
-                  className="rounded-lg shadow-md"
-                  width="100%"
-                  height="500"
-                  src={video}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
             </div>
           </div>
         </div>
