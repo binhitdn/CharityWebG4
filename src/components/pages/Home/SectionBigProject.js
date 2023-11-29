@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
+import { Modal, Button as ButtonModal } from "react-bootstrap";
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -133,9 +134,15 @@ function SectionBigProject() {
               <p className="mb-8 text-xl text-justify">{content}</p>
             </div>
             <div className="flex items-center space-x-4">
-              <a href={t("SectionBigProject.pdf")}>
+              {/* <a href={t("SectionBigProject.pdf")}>
                 {t("SectionBigProject.detail")}
-              </a>
+              </a> */}
+              <button
+                className="btn btn-primary text-blue-600"
+                onClick={() => setShowModalDetail(true)}
+              >
+                {t("SectionBigProject.detail")}
+              </button>
               {/* <button className="btn btn-primary text-blue-600">
                 {t("SectionBigProject.detail")}
               </button> */}
@@ -265,7 +272,42 @@ function SectionBigProject() {
           </div>
         </div>
       </div>
+      <ModalDetail
+        pdfLink={t("SectionBigProject.pdf")}
+        showModal={showModalDetail}
+        handleClose={() => setShowModalDetail(false)}
+      />
     </section>
   );
 }
+
+const ModalDetail = ({ pdfLink, showModal, handleClose }) => {
+  return (
+    <Modal
+      show={showModal}
+      onHide={handleClose}
+      size="xl" // "xl" sẽ tạo modal có kích thước lớn
+      fullscreen // Cho phép modal hiển thị full màn hình
+    >
+      <Modal.Header closeButton>
+        <Modal.Title>PDF Viewer</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <iframe
+          title="PDF Viewer"
+          src={pdfLink}
+          frameBorder="0"
+          width="100%"
+          height="100%" // Sử dụng chiều cao 100% để làm full màn hình
+        />
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
+
 export default SectionBigProject;
