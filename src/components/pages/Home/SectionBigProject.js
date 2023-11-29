@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
-import { toast } from "react-toastify";
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -91,10 +90,6 @@ function SectionBigProject() {
     e.preventDefault();
     // Xử lý logic đăng ký tại đây
     // ...
-  };
-  const handleRegister = () => {
-    toast.success("Đăng ký thành công");
-    setShowModal(false);
   };
   return (
     <section className="py-12">
@@ -230,11 +225,7 @@ function SectionBigProject() {
                       <br />
                       {/* Thêm các trường đăng ký vào đây */}
 
-                      <button
-                        type="submit"
-                        className="btn btn-primary"
-                        onClick={handleRegister}
-                      >
+                      <button type="submit" className="btn btn-primary">
                         Đăng ký
                       </button>
                     </form>
@@ -254,6 +245,23 @@ function SectionBigProject() {
               >
                 <span style={{ color: "#fff" }}>Share</span>
               </button>
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 px-4 mb-8">
+            <div className="mb-8">
+              <div className="mb-8"></div>
+              <div className="relative pb-9/16">
+                <iframe
+                  className="rounded-lg shadow-md"
+                  width="100%"
+                  height="500"
+                  src={video}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
