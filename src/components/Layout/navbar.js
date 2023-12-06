@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Link from "next/link";
 import {
   FaMapMarkerAlt,
@@ -72,16 +73,16 @@ const Navbar = ({ toggleSidebar }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const imageSize = windowSize.width < 640 ? 30 : 70;
+  const imageSize = windowSize.width < 640 ? 25 : 55;
 
   return (
     <div>
-      <div style={{ backgroundColor: "#01470c" }} className="mobile-hidden">
+      <div className="mobile-hidden bg-green-500">
         <div className="container mx-auto lg:flex lg:flex-row  lg:justify-between justify-center items-center space-y-2  text-white py-3 w-full">
           <div>
             <div
-              className="lg:flex lg:flex-row flex flex-col justify-center items-center space-x-12 lg:space-y-0 space-y-2"
-              style={{ backgroundColor: "#01470c" }}
+              className="lg:flex lg:flex-row bg-green-500 flex flex-col justify-center items-center space-x-12 lg:space-y-0 space-y-2"
+              
             >
               <div className="flex flex-row space-x-2">
                 <FaMapMarkerAlt className="w-5 h-5 text-white" />
@@ -108,13 +109,13 @@ const Navbar = ({ toggleSidebar }) => {
           </div> */}
         </div>
       </div>
-      <nav className="px-2 sm:px-4 py-2" style={{ backgroundColor: "#037415" }}>
+      <nav className="px-2 sm:px-4 py-2 shadow-lg shadow-indigo-500/40" style={{ backgroundColor: "#fff" }}>
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">
             <a href="#" className="flex"  style={{ textDecoration: 'none' }}>
               <div className="flex flex-row space-x-2 justify-center items-center ">
                 <Image src="/logo.png" width={imageSize} height={imageSize} />
-                <strong className="text-white center text-lg sm:text-2xl mb:text-2xl">
+                <strong className="text-black center text-lg sm:text-2xl mb:text-2xl">
                   {" "}
                   Smile Eyes Charity
                 </strong>
@@ -124,7 +125,7 @@ const Navbar = ({ toggleSidebar }) => {
           <div className="flex md:order-2 text-2xl">
             <button
               type="button"
-              className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 mobile-hidden"
+              className="text-black hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 p-10 rounded-3xl md:px-5 md:py-2.5 text-center mr-3 md:mr-0 mobile-hidden"
             >
               {t("navbar.donate")}
             </button>
@@ -174,8 +175,8 @@ const Navbar = ({ toggleSidebar }) => {
                     <a
                     style={{ textDecoration: 'none' }}
                       href="#"
-                      className={`block py-2 pr-4 pl-3 text-white  md:hover:text-yellow-500 md:p-0 ${
-                        router.pathname === item.link ? "text-yellow-600" : ""
+                      className={`block py-2 pr-4 pl-3 font-bold text-black md:hover:text-green-600 md:p-0 ${
+                        router.pathname === item.link ? "text-yellow-600 active:text-green-600" : ""
                       }`}
                     >
                       {item.name}
