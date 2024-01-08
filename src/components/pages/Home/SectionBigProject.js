@@ -16,41 +16,68 @@ function SectionBigProject() {
   const programbig = {
     vi: {
       title:
-        "DỰ ÁN PHÁT TRIỂN CỤM DÂN CƯ PÀ-CĂNG MỚI, THÔN PÀ ONG, XÃ CÀ DY, HUYỆN NAM GIANG",
-      time: "Thời gian: 9/2023 - 3/2024",
-
+        "DỰ ÁN GIÚP NGƯỜI CƠ-TU SẢN XUẤT THỰC PHẨM",
+      time: "Thời gian: 2 năm (01/01/2024 ~ 01/01/2026)",
+      plan: "Địa điểm: Thôn Pà-căng, xã Cà-dy, huyện Nam Giang, tỉnh Quảng Nam",
+      progress: {
+        current: "Bugdet: 18,000,000đ",
+        goal: "20,000,000đ",
+        percentage: "80%",
+      },
+      contributors: 34562,
       content:
-        "Cụm dân cư Pà-Căng mới cách cầu Xơi đường Hồ Chí Minh 3km đường bộ. Làng nằm bên bờ con sông Dakmy hiền hòa và phía sau là những dãy núi mây phủ sớm chiều êm đềm nên thơ. ...",
+        "Dự án này nhằm mục đích đồng hành và chia sẻ kỹ thuật chăn nuôi và rau hữu cơ bền vững với người dân trong làng. Các chuyên gia của dự án sẽ cùng người dân xây dựng các mô hình trồng trọt, chăn nuôi quy mô nhỏ tại thôn. Họ sẽ đến bản, cùng làm việc và chia sẻ trực tiếp với dân làng cách làm ruộng, để dân làng hiểu sâu và trực tiếp thực hành. Từ đó, người dân trong làng nắm vững được kỹ thuật và có thể tự xây dựng khu vườn riêng để cung cấp lương thực cho gia đình. ...",
       video: "https://www.youtube.com/embed/543jwFfCZvg",
     },
     en: {
       title:
-        "DEVELOPING NEW PA-CANG VILLAGE, CA DY COMMUNE, NAM GIANG DISTRICT",
-      time: "Time: 9/2023 - 3/2024",
+      "PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD",
+      time: "Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)",
+      plan: "Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province",
+      progress: {
+        current: "Bugdet: 18,000,000đ",
+        goal: "20,000,000đ",
+        percentage: "80%",
+      },
+      contributors: 34562,
       content:
-        "The new Pa-Cang residential cluster is 3 km by road from Xoi bridge on Ho Chi Minh Road. The village is located on the banks of the gentle Dak-my River. Behind the village are the cloud-covered mountains with peaceful scenery. ...",
+        "This project aims to accompany and share sustainable organic vegetables and livestock farming techniques with the villagers. Project experts will work with people to build small-scale farming and livestock models in the village. They will come to the village, work together and share directly with the villagers how to farm, so that the villagers can deeply understand and practice directly. Since then, the villagers can master the techniques and can build their own garden for their family’s food. ...",
       video: "https://www.youtube.com/embed/3_JHZXBMUho",
     },
     ja: {
-      title: "ベトナムのコトゥ民族のパキャン村の持続可能な発展",
-      time: "時間: 9/2023 - 3/2024",
+      title: "CO-TUの人々の食糧生産を支援するプロジェクト",
+      time: "期間：2年間（2024年01月01日〜2026年01月01日）",
+      plan: "場所：クアンナム省ナムザン地区カディコミューンパチャン村",
+      progress: {
+        current: "Bugdet: 18,000,000đ",
+        goal: "20,000,000đ",
+        percentage: "80%",
+      },
+      contributors: 34562,
 
       content:
-        "新しいパキャン住宅群は、ホーチミン道路のソイ橋から歩いて 3 km の場所にあります。 村は穏やかなダクミー川のほとりにあります。 村の後ろには雲に覆われた山々があり、のどかな風景が広がっています。 ...",
+        "このプロジェクトは、持続可能な有機野菜や畜産技術を村民に伝え、共有することを目的としています。 プロジェクトの専門家は人々と協力して、村に小規模な農業と家畜のモデルを構築します。 彼らは村に来て一緒に働き、農業のやり方を村民と直接共有し、村民が深く理解し、直接実践できるようにします。 それ以来、村人たちは技術を習得し、家族の食べ物のために自分の庭を作ることができるようになりました。 ...",
       video: "https://youtube.com/embed/aAqwxCyBdRE",
     },
     fr: {
       title:
-        "Village Pa-Cang du peuple Cotu au Vietnam le développement durable",
-      time: "Time: 9/2023 - 3/2024",
+        "PROJET POUR AIDER LES GENS DE CO-TU À PRODUIRE DE LA NOURRITURE",
+      time: "Durée : 2 ans (du 1er janvier 2024 au 1er janvier 2026)",
+      plan: "Lieu : Village Pà-căng, commune Cà-dy, district de Nam Giang, province de Quang Nam",
+      progress: {
+        current: "Bugdet: 18,000,000đ",
+        goal: "20,000,000đ",
+        percentage: "80%",
+      },
+      contributors: 34562,
 
       content:
-        "Nous sommes au centre du Vietnam, près de Da Nang. Le village de montagne Pa-Cang se trouve à 3 km du pont Xoi, sur la route Ho Chi Minh. Il s'étend sur les rives de la douce rivière Dak-My. ...",
+        "Ce projet vise à accompagner et partager des techniques d’élevage et de légumes biologiques durables avec les villageois. Les experts du projet travailleront avec la population pour construire des modèles d'agriculture et d'élevage à petite échelle dans le village. Ils viendront au village, travailleront ensemble et partageront directement avec les villageois comment cultiver, afin que les villageois puissent comprendre en profondeur et pratiquer directement. Depuis, les villageois maîtrisent les techniques et peuvent construire leur propre jardin pour nourrir leur famille. ...",
       video: "https://youtube.com/embed/d1A8bHeoQOA",
     },
   };
 
-  const { title, time, content, video } = programbig[LANG_CODE];
+  const { title, time,plan, content, video } = programbig[LANG_CODE];
   const [tymCount, setTymCount] = useState(0);
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
@@ -98,7 +125,13 @@ function SectionBigProject() {
       <div className="mb-8 text-center">
         {" "}
         {/* Thêm class text-center để căn giữa nội dung */}
-        <span className="text-5xl font-bold">{t("big.project")}</span>
+        <div className="bigProjectContainer">
+      <div className="line"></div>
+      <div className="textContainer">
+        <span className="highlight">{t("big.project")}</span>
+      </div>
+      <div className="line"></div>
+    </div>
       </div>
       <div className="mb-8 text-center">
         {" "}
@@ -124,14 +157,74 @@ function SectionBigProject() {
               </div>
             </div>
           </div>
+          
           <div className="w-full lg:w-2/5 px-4 mb-8">
             <div className="mb-8 mt-0">
               <div className="mb-8"></div>
-              <h2 className="text-3xl font-bold mb-4 text-blue-900">{title}</h2>
-              <h4 className="text-3xl font-bold mb-4 ">{time}</h4>
+              <h2 className="text-3xl text-justify" style={{ color: '#1fab89',fontWeight: '700' }}>{title}</h2>
+              &nbsp;
+
+              <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
+      <span style={{ fontWeight: 400, color: '#000000' }}>
+        <img
+          decoding="async"
+          className="wp-image-1286 alignnone lazyloaded"
+          src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+          alt=""
+          width="26"
+          height="26"
+          data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+        />
+      </span>
+      &nbsp;
+      <span style={{ fontWeight: 400 }}>{time}</span>
+    </div>
+
+    <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
+      <span style={{ fontWeight: 400, color: '#000000' }}>
+        <img
+          decoding="async"
+          className="wp-image-1286 alignnone lazyloaded"
+          src="https://smileeyecharity.org/wp-content/uploads/2023/10/Thiet-ke-chua-co-ten-3-400x400.png"
+          alt=""
+          width="40"
+          height="40"
+          data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+        />
+      </span>
+      &nbsp;
+      <span style={{ fontWeight: 400 }}>{plan}</span>
+    </div>   
+    &nbsp;
 
               <p className="mb-8 text-xl text-justify">{content}</p>
-              <p className="mb-8 text-xl text-justify">{content}</p>
+              <div className="flex items-center justify-between mb-4">
+              <div className="text-sm font-semibold text-gray-600">
+                {programbig[LANG_CODE].progress.current} /{" "}
+                {programbig[LANG_CODE].progress.goal}
+              </div>
+       
+            </div>
+            <div className="relative pt-1">
+              <div className="flex mb-2 items-center justify-between">
+                <div>
+                  <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                    {t("index.donation")}
+                  </span>
+                </div>
+                <div className="text-right">
+                  <span className="text-xs px-2 font-semibold inline-block text-green-600">
+                  {programbig[LANG_CODE].progress.percentage}
+                  </span>
+                </div>
+              </div>
+              <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                <div
+                  style={{ width: programbig[LANG_CODE].progress.percentage }}
+                  className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                ></div>
+              </div>
+            </div>
             </div>
             <div className="flex items-center space-x-4">
               {/* <a href={t("SectionBigProject.pdf")}>
@@ -154,10 +247,10 @@ function SectionBigProject() {
                 onClick={handleTymClick}
               />
               <span className="ml-2">{tymCount}</span>
-              <Button className="btn" onClick={toggleModal}>
+              
+              <Button  className="btn " onClick={toggleModal}>
                 Be A Contribute
               </Button>
-
               {showModal && (
                 <div
                   style={{
@@ -245,8 +338,8 @@ function SectionBigProject() {
                       </div>
                       <br />
                       {/* Thêm các trường đăng ký vào đây */}
-
-                      <button type="submit" className="btn btn-primary">
+                  
+                      <button type="submit" className="btn btn-primary" >
                         Đăng ký
                       </button>
                     </form>
