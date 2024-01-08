@@ -65,8 +65,8 @@ const Contributor = () => {
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-2/3 leading-9 pr-8 text-left" >
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-2/3 leading-9 pr-8 text-left" >
               I was born and raised in a rural area of Quang Nam province. My
               childhood was filled with experiences in nature and love. I played
               all kinds of games, including hide and seek, shooting arrows,
@@ -93,11 +93,11 @@ const Contributor = () => {
               helper and supporter for Vietnamese Association group in Japan.
           
             </div>
-            <div class="w-full md:w-1/3 ">
+            <div className="w-full md:w-1/3 ">
               <img
                 src="/contribute/founderavt.jpg"
                 alt=""
-                class="w-full md:w-96"
+                className="w-full md:w-96"
               />
             </div>
           </div>
@@ -117,15 +117,15 @@ const Contributor = () => {
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-1/3 pr-8">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/3 pr-8">
               <img
                 src="/contribute/founderavt1.jpg"
                 alt=""
-                class="w-full md:w-96"
+                className="w-full md:w-96"
               />
             </div>
-            <div class="w-full md:w-2/3 text-base leading-9">
+            <div className="w-full md:w-2/3 text-base leading-9">
               I have decided to join this project to experience many activities
               which I have never experienced before. Like many of us, I like
               something challenging and contributive to people and environment.
@@ -142,7 +142,7 @@ const Contributor = () => {
               whole project is planed for 5 years including many small projects
               to improve living standard and life skills for these villagers. It
               develops the existing know-how, respect for the environment,
-              collective and personal development, sharing, etc. It's a
+              collective and personal development, sharing, etc. Its a
               wonderful project that I invite you to join, to share, to give
               hope to all these people these men these women their children to
               this magnificent village.
