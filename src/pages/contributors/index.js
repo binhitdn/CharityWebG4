@@ -38,7 +38,6 @@ const contributors = [
 ];
 
 const Contributor = () => {
-  
   const { t } = useTranslation("translationContributors");
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
@@ -48,76 +47,105 @@ const Contributor = () => {
       <div className="area">
         <div className="container">
           {/* Tinh nguyen vien */}
-
-          <div className="row justify-center">
-            <div className="section-tittle section-tittle2 text-center mb-10">
-              <h2 className="text-3xl font-bold pt-10">{t("title")}</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
-              {contributors.map((contributor) => (
-                <div key={contributor.id} className="px-20">
-                  <div className="flex flex-col justify-center items-center">
-                    <div>
-                      <img
-                        src={contributor.avatar}
-                        alt=""
-                        className="rounded-full w-40 h-40"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">{contributor.name}</h3>
-                      <p>{contributor.role}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          {/* Nhà tài trợ */}
-          <div className="section-tittle section-tittle2 text-center mb-10">
-            <h2 className="text-3xl font-bold pt-10">{t("house")}</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
-            {contributors.map((contributor) => (
-              <div key={contributor.id} className="px-20">
-                <div className="flex flex-col justify-center items-center">
-                  <div>
-                    <img
-                      src={contributor.avatar}
-                      alt=""
-                      className="rounded-full w-40 h-40"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">{contributor.name}</h3>
-                    <p>{contributor.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
           <div className="row justify-center pt-20">
             <div className="col-xl-12 col-lg-7 col-md-10 col-sm-10">
               <div className="section-tittle section-tittle2 text-center mb-10">
                 <h2 className="text-3xl font-bold">{t("creator")}</h2>
               </div>
+              <div className="text-right pb-5">
+                <div className="font-bold text-green-400 text-xl leading-10">
+                  Dinh Thi Dong Phuong
+                </div>
+                <div className="">
+                  Email : dinhdongphuong@gmal.com
+                  <br></br>
+                  Phone : 0962414125
+
+                </div>
+              </div>
             </div>
           </div>
-          <div className="row justify-center">
-            <div className="px-20">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-2/3 leading-9 pr-8 text-left" >
+              I was born and raised in a rural area of Quang Nam province. My
+              childhood was filled with experiences in nature and love. I played
+              all kinds of games, including hide and seek, shooting arrows,
+              shooting marbles, playing the leaf trumpet, playing checkers,
+              jumping rope, catching fish and catching crabs, climbing trees to
+              pick fruit, going into caves to catch bats, etc. with the kids in
+              my village. My father was a teacher but he was also a very good
+              farmer. In addition to the the main work, he did all sorts of
+              things. He reclaimed land for farming of rice, raising livestock,
+              making wine, making vermicelli, making noodles, cutting hair,
+              repairing bicycles, building houses, etc. My mother was also a
+              teacher, and she also did all sorts of things after working in the
+              school. She made herbal medicine, was a tutor, sold things for
+              money, etc. My parents always support each other in living life. I
+              followed my father and mother in most of their activities. I
+              experienced and learned many interesting things from them. I went
+              to university, went to work, then studied abroad and worked in
+              Japan from 2026 to 2020. I participated in many practical
+              activities in Japan, too. I experienced growing rice, growing
+              potatoes, growing vegetables, cooking, making pies, processing
+              meat and fish, outdoor camping, fire extinguisher, etc. I also
+              experienced working as an IT project manager, a researcher in IT,
+              psychology and education, a lecturer in Ritsumeikan University., a
+              helper and supporter for Vietnamese Association group in Japan.
+          
+            </div>
+            <div className="w-full md:w-1/3 ">
               <img
                 src="/contribute/founderavt.jpg"
                 alt=""
-                className="rounded-full w-40 h-40 mx-auto"
+                className="w-full md:w-96"
               />
-              <div className="text-center pb-10 pt-5">
-                <h3 className="text-xl font-bold">Đinh Thị Đông Phương</h3>
-                <p className="text-center text-purple-500  w-1/2 mx-auto italic text-2xl">
-                  {t("content")}
-                </p>
+            </div>
+          </div>
+          <div className="row justify-center pt-20">
+            <div className="col-xl-12 col-lg-7 col-md-10 col-sm-10">
+              <div className="section-tittle section-tittle2 text-center mb-10">
+                <h2 className="text-3xl font-bold">{t("creator")}</h2>
               </div>
+              <div className="text-left pb-5">
+                <div className="font-bold text-green-400 text-xl leading-10">
+                  Gérard Kucharski
+                </div>
+                <div className="">
+                  Email : Kucger07@gmail.com
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/3 pr-8">
+              <img
+                src="/contribute/founderavt1.jpg"
+                alt=""
+                className="w-full md:w-96"
+              />
+            </div>
+            <div className="w-full md:w-2/3 text-base leading-9">
+              I have decided to join this project to experience many activities
+              which I have never experienced before. Like many of us, I like
+              something challenging and contributive to people and environment.
+              I have joined many activities such as gardening, planting,
+              cooking, etc. and they are very interesting. I feel more
+              confident, braver, and happier after I join this project. I feel
+              love myself more, and understand people more. I have joined many
+              activities with the founder, Ms. Phuong. We have mentored children
+              who are afraid of water so that they can get familiar with water
+              and be able to swim. We joined English classes to help children
+              who are afraid of speaking English so that they feel happy with
+              playing and communicating. This organization is a small structure
+              that uses the funds raised in full to help people directly. The
+              whole project is planed for 5 years including many small projects
+              to improve living standard and life skills for these villagers. It
+              develops the existing know-how, respect for the environment,
+              collective and personal development, sharing, etc. Its a
+              wonderful project that I invite you to join, to share, to give
+              hope to all these people these men these women their children to
+              this magnificent village.
             </div>
           </div>
           <div className="row justify-center pt-20">
