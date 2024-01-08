@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
 import { Modal, Button as ButtonModal } from "react-bootstrap";
+import { toast } from 'react-toastify';
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -72,13 +73,22 @@ function SectionBigProject() {
     // Cập nhật trạng thái tymCount trong React
     setTymCount(newTymCount);
   };
-  const handleShareClick = () => {
-    const linkToCopy = "https://korehalinku.com"; // Thay thế đường dẫn bằng liên kết thực tế cần chia sẻ
 
+  const handleShareClick = () => {
+    const linkToCopy = window.location.href;
     navigator.clipboard
       .writeText(linkToCopy)
       .then(() => {
-        alert("đã copy link");
+        // Hiển thị thông báo bằng react-toastify
+        toast("Copy Successfully!", {
+          position: "top-center",
+          autoClose: 2000, // Thông báo sẽ tự đóng sau 2 giây
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+        });
       })
       .catch((error) => {
         console.error("Lỗi khi sao chép liên kết:", error);
