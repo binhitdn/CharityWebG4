@@ -137,7 +137,7 @@ const Contributor = () => {
               whole project is planed for 5 years including many small projects
               to improve living standard and life skills for these villagers. It
               develops the existing know-how, respect for the environment,
-              collective and personal development, sharing, etc. It's a
+              collective and personal development, sharing, etc. Its a
               wonderful project that I invite you to join, to share, to give
               hope to all these people these men these women their children to
               this magnificent village.
