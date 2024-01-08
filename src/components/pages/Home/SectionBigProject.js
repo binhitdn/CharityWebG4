@@ -264,20 +264,12 @@ function SectionBigProject() {
                 </div>
               )}
 
-              <button
-                className="btn bg-transparent "
+              <img
+                src="/share.png"
+                alt="Share"
+                className="w-8 h-8 cursor-pointer"
                 onClick={handleShareClick}
-              >
-                <span
-                  style={{
-                    color: "#000",
-                    textSize: "20px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Share
-                </span>
-              </button>
+              />
             </div>
           </div>
         </div>
