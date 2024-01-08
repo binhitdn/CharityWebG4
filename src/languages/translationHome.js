@@ -3,8 +3,8 @@ const translationHome = {
     "slider.title": "We have the power to help people",
     "slider.subtitle": "Join us on this journey",
     "slider.button": "Join now",
-    "detail.title": "Details Project",
-    "big.project":"Big Project",
+    "detail.title": "DETAILS PROJECT",
+    "big.project":"PRACTICAL PROJECTS AND PROGRAMS",
     "SectionBigProject.place": "Place",
     "SectionBigProject.detail": "View Detail",
     "SectionBigProject.pdf" : "Eng.pdf",
@@ -19,7 +19,7 @@ const translationHome = {
     "slider.subtitle": "Hãy tham gia vào cuộc hành trình này",
     "slider.button": "Tham gia ngay",
     "detail.title": "Dự án cụ thể",
-    "big.project":"Dự án lớn",
+    "big.project":"DỰ ÁN, CHƯƠNG TRÌNH THỰC HIỆN",
     "SectionBigProject.place": "Địa điểm",
     "SectionBigProject.detail": "Xem chi tiết",
     "SectionBigProject.pdf" : "Viet.pdf",
@@ -34,7 +34,7 @@ const translationHome = {
     "slider.subtitle": "Rejoignez-nous dans ce voyage",
     "slider.button": "Rejoindre maintenant",
     "detail.title": "Projets spécifiques",
-    "big.project":"Projets d’envergure",
+    "big.project":"PROJETS ET PROGRAMMES PRATIQUES",
     "SectionBigProject.place": "Lieu",
     "SectionBigProject.detail": "Voir les détails",
     "SectionBigProject.pdf" : "Fren.pdf",
@@ -49,7 +49,7 @@ const translationHome = {
     "slider.subtitle": "この旅に参加してください",
     "slider.button": "参加する",
     "detail.title": "具体的なプロジェクト",
-    "big.project":"大プロジェクト",
+    "big.project":"実践的なプロジェクトとプログラム",
     "SectionBigProject.place": "場所",
     "SectionBigProject.detail": " 詳細をみる",
     "SectionBigProject.pdf" : "Jap.pdf",
@@ -62,3 +62,4 @@ const translationHome = {
 };
 
 export default translationHome;
+
