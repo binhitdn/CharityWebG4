@@ -5,10 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&family=Cherry+Bomb+One&family=Dela+Gothic+One&family=Kaisei+HarunoUmi:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=RocknRoll+One&family=Yuji+Syuku&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif !important;
-}
-
 .underlined {
   text-decoration: underline;
 }
@@ -18,6 +14,38 @@ body {
 }
 .color-secondary {
   color: #037415;
+}
+.bigProjectContainer {
+  padding-top:30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight:700;
+  font-size:300%;
+}
+
+.line {
+  flex: 1;
+  height: 2px; /* Độ dày của đường line */
+  background-color: #1fab89;
+  margin: 0 40px; /* Khoảng cách giữa đường line và chữ */
+}
+.line1 {
+  width: 30%;
+  height: 2px; /* Độ dày của đường line */
+  background-color: #1fab89;
+  margin: 0 auto; /* Đặt margin của đường line là auto để nó hiển thị ở giữa */
+}
+
+.textContainer {
+  padding: 0 10px; /* Khoảng cách giữa đường line và chữ */
+  color: rgb(66, 184, 155); /* Màu chữ */
+}
+
+.highlight {
+  padding: 0.1em 0.2em; /* Điều chỉnh khoảng cách giữa chữ và gạch ngang */
+  border-radius: 3px; /* Bo tròn mép */
+  margin-right: 0.2em; /* Khoảng cách giữa phần có màu và chữ còn lại */
 }
 
 .area {
