@@ -15,6 +15,38 @@
 .color-secondary {
   color: #037415;
 }
+.bigProjectContainer {
+  padding-top:30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight:700;
+  font-size:300%;
+}
+
+.line {
+  flex: 1;
+  height: 2px; /* Độ dày của đường line */
+  background-color: #1fab89;
+  margin: 0 40px; /* Khoảng cách giữa đường line và chữ */
+}
+.line1 {
+  width: 30%;
+  height: 2px; /* Độ dày của đường line */
+  background-color: #1fab89;
+  margin: 0 auto; /* Đặt margin của đường line là auto để nó hiển thị ở giữa */
+}
+
+.textContainer {
+  padding: 0 10px; /* Khoảng cách giữa đường line và chữ */
+  color: rgb(66, 184, 155); /* Màu chữ */
+}
+
+.highlight {
+  padding: 0.1em 0.2em; /* Điều chỉnh khoảng cách giữa chữ và gạch ngang */
+  border-radius: 3px; /* Bo tròn mép */
+  margin-right: 0.2em; /* Khoảng cách giữa phần có màu và chữ còn lại */
+}
 
 .area {
   width: 80%;
