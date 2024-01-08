@@ -45,8 +45,14 @@ function FormContact() {
     return valid;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleFormSubmit = async () => {
+    const response = await fetch("/api/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
     if (validateForm()) {
       setFormData({
@@ -57,6 +63,11 @@ function FormContact() {
 
       notifySuccess();
     }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await handleFormSubmit();
   };
 
   const handleChange = (e) => {
