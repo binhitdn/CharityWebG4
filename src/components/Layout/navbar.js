@@ -72,7 +72,7 @@ const Navbar = ({ toggleSidebar }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const imageSize = windowSize.width < 640 ? 30 : 70;
+  const imageSize = windowSize.width < 980 ? 30 : 70;
 
   return (
     <div>
@@ -111,10 +111,10 @@ const Navbar = ({ toggleSidebar }) => {
       <nav className="px-2 sm:px-4 py-2" style={{ backgroundColor: "#037415" }}>
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">
-            <a href="#" className="flex"  style={{ textDecoration: 'none' }}>
+            <a href="#" className="flex" style={{ textDecoration: "none" }}>
               <div className="flex flex-row space-x-2 justify-center items-center ">
                 <Image src="/logo.png" width={imageSize} height={imageSize} />
-                <strong className="text-white center text-lg sm:text-2xl mb:text-2xl">
+                <strong className="text-white center text-lg sm:text-xl mb:text-2xl">
                   {" "}
                   Smile Eyes Charity
                 </strong>
@@ -122,23 +122,23 @@ const Navbar = ({ toggleSidebar }) => {
             </a>
           </Link>
           <div className="flex md:order-2 text-2xl">
-            <button
+            {/* <button
               type="button"
               className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 mobile-hidden"
             >
               {t("navbar.donate")}
-            </button>
+            </button> */}
             <button
               data-collapse-toggle="mobile-menu-4"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
+              className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 py-3"
               aria-controls="mobile-menu-4"
               aria-expanded="false"
               onClick={() => toggleSidebar()}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="w-6 h-6"
+                className="w-10 h-10"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,9 +172,10 @@ const Navbar = ({ toggleSidebar }) => {
                 <li key={item.name}>
                   <Link href={item.link}>
                     <a
-                    style={{ textDecoration: 'none' }}
+                      style={{ textDecoration: "none" }}
                       href="#"
-                      className={`block py-2 pr-4 pl-3 text-white  md:hover:text-yellow-500 md:p-0 ${
+                      className={`block py-2 pr-4 pl-3 text-white  md:hover:text-yellow-500 md:p-0 text-base lg:text-xl font-semibold
+                      ${
                         router.pathname === item.link ? "text-yellow-600" : ""
                       }`}
                     >
