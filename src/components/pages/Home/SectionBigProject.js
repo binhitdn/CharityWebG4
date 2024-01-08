@@ -1,10 +1,11 @@
-
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
 import { Modal, Button as ButtonModal } from "react-bootstrap";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
+import { useRouter } from "next/router";
+import Link from "next/link";
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -12,13 +13,17 @@ function SectionBigProject() {
   const [showForm, setShowForm] = useState(false);
   const [showModalDetail, setShowModalDetail] = useState(false);
 
+  const router = useRouter();
+  const handleNavigateToContact = () => {
+    router.push("/contact#contact");
+  };
+
   const handleOpenForm = () => {
     setShowForm(true);
   };
   const programbig = {
     vi: {
-      title:
-        "DỰ ÁN GIÚP NGƯỜI CƠ-TU SẢN XUẤT THỰC PHẨM",
+      title: "DỰ ÁN GIÚP NGƯỜI CƠ-TU SẢN XUẤT THỰC PHẨM",
       time: "Thời gian: 2 năm (01/01/2024 ~ 01/01/2026)",
       plan: "Địa điểm: Thôn Pà-căng, xã Cà-dy, huyện Nam Giang, tỉnh Quảng Nam",
       progress: {
@@ -32,8 +37,7 @@ function SectionBigProject() {
       video: "https://www.youtube.com/embed/543jwFfCZvg",
     },
     en: {
-      title:
-      "PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD",
+      title: "PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD",
       time: "Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)",
       plan: "Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province",
       progress: {
@@ -62,8 +66,7 @@ function SectionBigProject() {
       video: "https://youtube.com/embed/aAqwxCyBdRE",
     },
     fr: {
-      title:
-        "PROJET POUR AIDER LES GENS DE CO-TU À PRODUIRE DE LA NOURRITURE",
+      title: "PROJET POUR AIDER LES GENS DE CO-TU À PRODUIRE DE LA NOURRITURE",
       time: "Durée : 2 ans (du 1er janvier 2024 au 1er janvier 2026)",
       plan: "Lieu : Village Pà-căng, commune Cà-dy, district de Nam Giang, province de Quang Nam",
       progress: {
@@ -79,7 +82,7 @@ function SectionBigProject() {
     },
   };
 
-  const { title, time,plan, content, video } = programbig[LANG_CODE];
+  const { title, time, plan, content, video } = programbig[LANG_CODE];
   const [tymCount, setTymCount] = useState(0);
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
@@ -131,18 +134,19 @@ function SectionBigProject() {
     // Xử lý logic đăng ký tại đây
     // ...
   };
+
   return (
     <section className="py-12">
       <div className="mb-8 text-center">
         {" "}
         {/* Thêm class text-center để căn giữa nội dung */}
         <div className="bigProjectContainer">
-      <div className="line"></div>
-      <div className="textContainer">
-        <span className="highlight">{t("big.project")}</span>
-      </div>
-      <div className="line"></div>
-    </div>
+          <div className="line"></div>
+          <div className="textContainer">
+            <span className="highlight">{t("big.project")}</span>
+          </div>
+          <div className="line"></div>
+        </div>
       </div>
       <div className="mb-8 text-center">
         {" "}
@@ -168,74 +172,81 @@ function SectionBigProject() {
               </div>
             </div>
           </div>
-          
+
           <div className="w-full lg:w-2/5 px-4 mb-8">
             <div className="mb-8 mt-0">
               <div className="mb-8"></div>
-              <h2 className="text-3xl text-justify" style={{ color: '#1fab89',fontWeight: '700' }}>{title}</h2>
+              <h2
+                className="text-3xl text-justify"
+                style={{ color: "#1fab89", fontWeight: "700" }}
+              >
+                {title}
+              </h2>
               &nbsp;
-
-              <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
-      <span style={{ fontWeight: 400, color: '#000000' }}>
-        <img
-          decoding="async"
-          className="wp-image-1286 alignnone lazyloaded"
-          src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
-          alt=""
-          width="26"
-          height="26"
-          data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
-        />
-      </span>
-      &nbsp;
-      <span style={{ fontWeight: 400 }}>{time}</span>
-    </div>
-
-    <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
-      <span style={{ fontWeight: 400, color: '#000000' }}>
-        <img
-          decoding="async"
-          className="wp-image-1286 alignnone lazyloaded"
-          src="https://smileeyecharity.org/wp-content/uploads/2023/10/Thiet-ke-chua-co-ten-3-400x400.png"
-          alt=""
-          width="40"
-          height="40"
-          data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
-        />
-      </span>
-      &nbsp;
-      <span style={{ fontWeight: 400 }}>{plan}</span>
-    </div>   
-    &nbsp;
-
+              <div
+                className="mb-2 text-xl text-justify"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <span style={{ fontWeight: 400, color: "#000000" }}>
+                  <img
+                    decoding="async"
+                    className="wp-image-1286 alignnone lazyloaded"
+                    src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+                    alt=""
+                    width="26"
+                    height="26"
+                    data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+                  />
+                </span>
+                &nbsp;
+                <span style={{ fontWeight: 400 }}>{time}</span>
+              </div>
+              <div
+                className="mb-2 text-xl text-justify"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <span style={{ fontWeight: 400, color: "#000000" }}>
+                  <img
+                    decoding="async"
+                    className="wp-image-1286 alignnone lazyloaded"
+                    src="https://smileeyecharity.org/wp-content/uploads/2023/10/Thiet-ke-chua-co-ten-3-400x400.png"
+                    alt=""
+                    width="40"
+                    height="40"
+                    data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+                  />
+                </span>
+                &nbsp;
+                <span style={{ fontWeight: 400 }}>{plan}</span>
+              </div>
+              &nbsp;
               <p className="mb-8 text-xl text-justify">{content}</p>
               <div className="flex items-center justify-between mb-4">
-              <div className="text-sm font-semibold text-gray-600">
-                {programbig[LANG_CODE].progress.current} /{" "}
-                {programbig[LANG_CODE].progress.goal}
-              </div>
-       
-            </div>
-            <div className="relative pt-1">
-              <div className="flex mb-2 items-center justify-between">
-                <div>
-                  <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
-                    {t("index.donation")}
-                  </span>
-                </div>
-                <div className="text-right">
-                  <span className="text-xs px-2 font-semibold inline-block text-green-600">
-                  {programbig[LANG_CODE].progress.percentage}
-                  </span>
+                <div className="text-sm font-semibold text-gray-600">
+                  {programbig[LANG_CODE].progress.current} /{" "}
+                  {programbig[LANG_CODE].progress.goal}
                 </div>
               </div>
-              <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
-                <div
-                  style={{ width: programbig[LANG_CODE].progress.percentage }}
-                  className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
-                ></div>
+              <div className="relative pt-1">
+                <div className="flex mb-2 items-center justify-between">
+                  <div>
+                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                      {t("index.donation")}
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-xs px-2 font-semibold inline-block text-green-600">
+                      {programbig[LANG_CODE].progress.percentage}
+                    </span>
+                  </div>
+                </div>
+                <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                  <div
+                    style={{ width: programbig[LANG_CODE].progress.percentage }}
+                    className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                  ></div>
+                </div>
               </div>
-            </div>
             </div>
             <div className="flex items-center space-x-4">
               {/* <a href={t("SectionBigProject.pdf")}>
@@ -258,10 +269,15 @@ function SectionBigProject() {
                 onClick={handleTymClick}
               />
               <span className="ml-2">{tymCount}</span>
-              
-              <Button  className="btn " onClick={toggleModal}>
+
+              {/* <Button className="btn " onClick={toggleModal}>
                 Be A Contribute
-              </Button>
+              </Button> */}
+              <Link href="/contact" passHref>
+                <Button className="btn " onClick={handleNavigateToContact}>
+                  Be A Contribute
+                </Button>
+              </Link>
               {showModal && (
                 <div
                   style={{
@@ -349,8 +365,8 @@ function SectionBigProject() {
                       </div>
                       <br />
                       {/* Thêm các trường đăng ký vào đây */}
-                  
-                      <button type="submit" className="btn btn-primary" >
+
+                      <button type="submit" className="btn btn-primary">
                         Đăng ký
                       </button>
                     </form>

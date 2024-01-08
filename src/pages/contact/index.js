@@ -8,10 +8,14 @@ function Contact() {
   const { t } = useTranslation("translationContact");
   const { i18n } = useTranslation();
   const LANG_CODE = i18n.language;
+  const contactRef = React.useRef();
+
   return (
     <div>
       <FAQ />
-      <FormContact />
+      <div id="contact">
+        <FormContact ref={contactRef} />
+      </div>
     </div>
   );
 }

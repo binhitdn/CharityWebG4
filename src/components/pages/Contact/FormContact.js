@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function FormContact() {
   const { t } = useTranslation("translationContact");
-  const { i18n } = useTranslation();
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -49,22 +49,31 @@ function FormContact() {
   };
 
   const handleFormSubmit = async () => {
-    const response = await fetch("/api/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    setLoading(true); // Set loading to true when starting form submission
 
-    if (validateForm()) {
-      setFormData({
-        email: "",
-        subject: "",
-        message: "",
+    try {
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
 
-      notifySuccess();
+      if (validateForm()) {
+        setFormData({
+          email: "",
+          subject: "",
+          message: "",
+        });
+
+        notifySuccess();
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Handle error, show error message, etc.
+    } finally {
+      setLoading(false); // Set loading to false regardless of success or failure
     }
   };
 
@@ -91,7 +100,6 @@ function FormContact() {
             {t("needHelpMessage")}
           </p>
           <form className="space-y-8" onSubmit={handleSubmit}>
-            {/* Your form fields */}
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
@@ -157,9 +165,10 @@ function FormContact() {
 
             <button
               type="submit"
+              disabled={loading}
               className="py-3 px-5 text-sm font-medium text-center rounded-lg bg-green-800 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 text-white transition duration-200"
             >
-              {t("sendMessage")}
+              {loading ? "Sending..." : t("sendMessage")}
             </button>
           </form>
         </div>

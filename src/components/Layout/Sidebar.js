@@ -48,10 +48,10 @@ export default function Sidebar({ show, setter }) {
     };
   }, []);
 
-  const className = `bg-green-600 w-[250px] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40${
+  const className = `bg-green-600 w-1/2 transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40${
     isDesktop ? " hidden" : ""
   }`;
-  const appendClass = show ? " ml-0" : " ml-[-250px] md:ml-0";
+  const appendClass = show ? " ml-0" : " ml-[-50%]" + " md:ml-0";
 
   const MenuItem = ({ icon, name, route }) => {
     const colorClass =
@@ -67,6 +67,7 @@ export default function Sidebar({ show, setter }) {
           }}
           className={`no-underline font-semibold
           flex gap-1 [&>*]:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
+          style={{ textAlign: "left" }}
         >
           <div className="text-xl flex [&>*]:mx-auto w-[30px]">{icon}</div>
           <div>{name}</div>
