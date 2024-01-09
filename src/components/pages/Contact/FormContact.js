@@ -49,31 +49,30 @@ function FormContact() {
   };
 
   const handleFormSubmit = async () => {
-    setLoading(true); // Set loading to true when starting form submission
-
+    setLoading(true);
+  
     try {
-      const response = await fetch("/api/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
       if (validateForm()) {
+        await fetch("/api/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+  
         setFormData({
           email: "",
           subject: "",
           message: "",
         });
-
+  
         notifySuccess();
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      // Handle error, show error message, etc.
     } finally {
-      setLoading(false); // Set loading to false regardless of success or failure
+      setLoading(false);
     }
   };
 

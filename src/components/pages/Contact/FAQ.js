@@ -21,8 +21,8 @@ function FAQ() {
               <summary className="py-2 outline-none cursor-pointer focus:underline">
                 {t("ifWecan")}
               </summary>
-              <div className="px-4 pb-4">
-                <p>
+              <div className="lg:px-4 px-2 pb-4">
+                <p className="text-base">
                   {t("thankYou")}
 
                 </p>
@@ -33,7 +33,7 @@ function FAQ() {
                 {t("ifIparticipate")}
               </summary>
               <div className="px-4 pb-4">
-                <p>
+                <p className="text-base">
                 {t("dependsOn")}
                 </p>
               </div>
@@ -43,7 +43,7 @@ function FAQ() {
                 {t("iWouldLike")}
               </summary>
               <div className="px-4 pb-4 space-y-2">
-                <p>
+                <p className="text-base">
                   {t("thankYouFor")}
                 </p>
               </div>
@@ -53,7 +53,7 @@ function FAQ() {
                 {t("iWant")}
               </summary>
               <div className="px-4 pb-4 space-y-2">
-                <p>
+                <p className="text-base">
                   {t("thankYouForYour")}
                 </p>
               </div>
@@ -63,7 +63,7 @@ function FAQ() {
                {t("doesThe")}
               </summary>
               <div className="px-4 pb-4 space-y-2">
-                <p>
+                <p className="text-base">
                   {t("eachProject")}
 
                 </p>
