@@ -21,56 +21,68 @@ const Navbar = ({ toggleSidebar }) => {
     width: undefined,
     height: undefined,
   });
+  const [isHeader, setIsHeader] = useState(false);
+
+  const handleScroll = () => {
+    setIsHeader(window.scrollY >= 20);
+  };
+
+  const handleResize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    handleResize(); // Trigger initial resize
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty dependency array means this effect runs once on mount
 
   const navItems = [
     {
-      name: t("navbar.home"),
-      link: "/",
+      name: t('navbar.home'),
+      link: '/',
     },
     {
-      name: t("navbar.achievements"),
-      link: "/achievements",
+      name: t('navbar.achievements'),
+      link: '/achievements',
     },
     {
-      name: t("navbar.contributors"),
-      link: "/contributors",
+      name: t('navbar.contributors'),
+      link: '/contributors',
     },
     {
-      name: t("navbar.blog"),
-      link: "/blog",
+      name: t('navbar.blog'),
+      link: '/blog',
     },
     {
-      name: t("navbar.contact"),
-      link: "/contact",
+      name: t('navbar.contact'),
+      link: '/contact',
     },
   ];
+
   const languageImages = {
-    en: "/logo.png",
-    vi: "/vn.jpg",
-    fr: "/france-flag.png",
-    ja: "/japan-flag.png",
+    en: '/logo.png',
+    vi: '/vn.jpg',
+    fr: '/france-flag.png',
+    ja: '/japan-flag.png',
   };
 
   const languageStyles = {
     backgroundImage: `url(${languageImages[i18n.language]})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "30px 30px",
-    backgroundPosition: "0 50%",
-    paddingLeft: "40px",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '30px 30px',
+    backgroundPosition: '0 50%',
+    paddingLeft: '40px',
   };
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const imageSize = windowSize.width < 640 ? 30 : 70;
 
@@ -108,10 +120,10 @@ const Navbar = ({ toggleSidebar }) => {
           </div> */}
         </div>
       </div>
-      <nav className="px-2 sm:px-4 py-2" style={{ backgroundColor: "#037415" }}>
+      <nav className={isHeader ? `px-2 sm:px-4 py-2 w-full transition-all duration-500 z-50 shadow-md fixed top-0 ease-in-out` : `px-2 sm:px-4 relative py-2 transition-all duration-300`} style={{ backgroundColor: "#037415" }}>
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/">
-            <a href="#" className="flex"  style={{ textDecoration: 'none' }}>
+            <a href="#" className="flex" style={{ textDecoration: 'none' }}>
               <div className="flex flex-row space-x-2 justify-center items-center ">
                 <Image src="/logo.png" width={imageSize} height={imageSize} />
                 <strong className="text-white center text-lg sm:text-2xl mb:text-2xl">
@@ -124,7 +136,7 @@ const Navbar = ({ toggleSidebar }) => {
           <div className="flex md:order-2 text-2xl">
             <button
               type="button"
-              className="text-white hover:text-white hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 mobile-hidden"
+              className="text-white hover:text-white transition-all duration-300 hover:bg-yellow-600 border-2 border-yellow-500 rounded-3xl px-3 py-1 md:px-5 md:py-2.5 text-center mr-3 md:mr-0 mobile-hidden"
             >
               {t("navbar.donate")}
             </button>
@@ -172,11 +184,10 @@ const Navbar = ({ toggleSidebar }) => {
                 <li key={item.name}>
                   <Link href={item.link}>
                     <a
-                    style={{ textDecoration: 'none' }}
                       href="#"
-                      className={`block py-2 pr-4 pl-3 text-white  md:hover:text-yellow-500 md:p-0 ${
-                        router.pathname === item.link ? "text-yellow-600" : ""
-                      }`}
+                      style={{ textDecoration: 'none' }}
+                      className={`block py-2 pr-4 pl-3 text-white md:p-0 hover:text-green-400 ${router.pathname === item.link ? "text-yellow-600" : ""
+                        }`}
                     >
                       {item.name}
                     </a>
