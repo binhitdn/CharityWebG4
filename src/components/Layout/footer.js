@@ -11,10 +11,9 @@ const Footer = () => {
     <div style={{ backgroundColor: COLORS.secondary }}>
       <div className="py-16 px-16" style={{ backgroundColor: COLORS.secondary }}>
         <div className="container mx-auto flex flex-col space-y-24">
-          <div className="grid lg:grid-cols-3 gap-20">
-
-            <div className="col-span-1 space-y-8">
-              <div className="col-span-1 flex flex-row items-center space-x-3">
+          <div className="grid lg:grid-cols-3 gap-1">
+            <div className="col-span-1 lg:col-span-1 space-y-8 lg:space-y-8">
+              <div className="col-span-1 lg:col-span-1 flex flex-row items-center space-x-3 lg:mt-30">
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <Image src="/logo.png" width={100} height={100} />
                 </div>
@@ -44,7 +43,7 @@ const Footer = () => {
 
                 <div className="flex flex-col space-y-4">
                   <div className="flex flex-row items-center space-x-4">
-                    <p className="text-white" style={{ marginTop: "30px" }}>{t("footer.companyinfo")}</p>
+                    <p className="text-white" style={{ marginTop: "10px" }}>{t("footer.companyinfo")}</p>
                   </div>
                   <div className="flex flex-row items-center space-x-4">
                     <p className="text-white">{t("footer.tax")}: 4001273487</p>
@@ -58,10 +57,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-1 flex flex-row space-x-3" style={{ marginTop: "30px" }}>
+            <div className="col-span-1 flex flex-row space-x-3" style={{ marginTop: "35px" }}>
               <div className="space-y-2">
                 <p className="text-white">{t("footer.working_title")}</p>
-                <p className="text-white font-medium" style={{ marginTop: "80px" }}>{t("footer.working")}</p>
+                <p className="text-white font-medium" style={{ marginTop: "50px" }}>{t("footer.working")}</p>
                 <p className="text-white font-medium" style={{ marginTop: "30px" }}>{t("footer.support")}: 24/7</p>
               </div>
             </div>
