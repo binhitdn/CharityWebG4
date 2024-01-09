@@ -1,6 +1,9 @@
 const translationHome = {
   en: {
-    "slider.title": "We have the power to help people",
+    "slider.title": "How do you feel when you see the children in the above picture? I have met them in their village and in their school. These are children of the Ko-tu ethnic minority. I also experienced my childhood like that. We had no food and no clothes. And I was so happy that many people helped me and gave their love to me. They gave me food and clothes. They taught me many skills for survival and living with their kind heart. They helped me to develop my mind and my heart. I grew up in difficult conditions but I felt that people are always full of love and support. Thanks to that, I have developed my self so that I could receive wonderful opportunities in my life. I got a scholarship and successfully completed many practical education programs in Japan, including information technology, and NLP. I became confident. I love this life. My soul is now fully filled with love for people.",
+    "slider.title1": "The more I look at the children, the more I feel choked up and I burst into tears. These Ko-tu children and the honest people here inspired me to my dream of volunteer. I will organize specific and practical charity projects and programs to support people in difficult areas. The immediate goal is to help them have enough food. The next goal is to support them improve their skills. The goals will be achieved in a sustainable way.    ",
+    "slider.title2": "If you have the same feelings as me, and have the same dreams as me, please join these charity projects with me. Our sincere participation will bring a lot of happiness to all parties. Our loves will help society develop and spread love.    ",
+    "slider.title3": "Dinh Thi Dong Phuong, Founder of Smile Eye Charity",
     "slider.subtitle": "Join us on this journey",
     "slider.button": "Join now",
     "detail.title": "DETAILS PROJECT",
@@ -15,7 +18,11 @@ const translationHome = {
     "index.report": "Report",
   },
   vi: {
-    "slider.title": "Chúng ta có sức mạnh để giúp đỡ mọi người",
+    "slider.title": "Bạn cảm thấy thế nào khi nhìn thấy những đứa trẻ trong hình trên? Tôi đã gặp họ ở làng và trường học của họ. Đây là những đứa trẻ dân tộc thiểu số Cơ-tu. Tôi cũng đã trải qua tuổi thơ của mình như vậy. Chúng tôi không có thức ăn và không có quần áo. Và tôi rất vui khi có nhiều người giúp đỡ và dành tình cảm cho tôi. Họ cho tôi thức ăn và quần áo. Họ đã dạy tôi nhiều kỹ năng sinh tồn và sống bằng trái tim nhân hậu của họ. Họ đã giúp tôi phát triển trí tuệ và trái tim mình. Tôi lớn lên trong điều kiện khó khăn nhưng tôi cảm nhận được mọi người luôn tràn đầy tình yêu thương và sự hỗ trợ. Nhờ đó, tôi đã phát triển bản thân để có thể đón nhận những cơ hội tuyệt vời trong cuộc sống. Tôi đã nhận được học bổng và hoàn thành xuất sắc nhiều chương trình giáo dục thực tế tại Nhật Bản, trong đó có công nghệ thông tin và NLP. Tôi trở nên tự tin. Tôi yêu cuộc sống này. Tâm hồn tôi giờ đây tràn ngập tình yêu thương con người.",
+    "slider.title1": "Càng nhìn các con, tôi càng nghẹn ngào và bật khóc. Những đứa trẻ Ko-tu và những con người lương thiện ở đây đã truyền cảm hứng cho tôi thực hiện ước mơ tình nguyện. Tôi sẽ tổ chức các dự án, chương trình từ thiện cụ thể, thiết thực để hỗ trợ người dân ở vùng khó khăn. Mục tiêu trước mắt là giúp họ có đủ thức ăn. Mục tiêu tiếp theo là hỗ trợ họ cải thiện kỹ năng của mình. Các mục tiêu sẽ đạt được một cách bền vững.",
+    "slider.title2": "Nếu bạn có cùng cảm xúc, ước mơ giống tôi thì hãy tham gia những dự án từ thiện này cùng tôi nhé. Sự tham gia chân thành của chúng tôi sẽ mang lại nhiều hạnh phúc cho tất cả các bên. Tình yêu thương của chúng ta sẽ giúp xã hội phát triển và lan tỏa tình yêu thương.",
+    "slider.title3": "Đinh Thị Đông Phương, Người sáng lập tổ chức từ thiện Smile Eye",
+
     "slider.subtitle": "Hãy tham gia vào cuộc hành trình này",
     "slider.button": "Tham gia ngay",
     "detail.title": "Dự án cụ thể",
@@ -30,7 +37,11 @@ const translationHome = {
     "index.report": "Báo cáo",
   },
   fr: {
-    "slider.title": "Nous avons le pouvoir d'aider les gens",
+    "slider.title": "Que ressentez-vous lorsque vous voyez les enfants sur la photo ci-dessus ? Je les ai rencontrés dans leur village et dans leur école. Ce sont des enfants de la minorité ethnique Ko-tu. J'ai aussi vécu mon enfance comme ça. Nous n’avions ni nourriture ni vêtements. Et j’étais tellement heureuse que beaucoup de gens m’aident et me donnent leur amour. Ils m'ont donné de la nourriture et des vêtements. Ils m’ont appris de nombreuses compétences pour survivre et vivre avec leur bon cœur. Ils m'ont aidé à développer mon esprit et mon cœur. J'ai grandi dans des conditions difficiles mais j'ai senti que les gens étaient toujours pleins d'amour et de soutien. Grâce à cela, je me suis développé afin de pouvoir bénéficier de merveilleuses opportunités dans ma vie. J'ai obtenu une bourse et terminé avec succès de nombreux programmes de formation pratique au Japon, notamment en technologie de l'information et en PNL. Je deviens confiant. J'aime cette vie. Mon âme est maintenant pleinement remplie d'amour pour les gens.",
+    "slider.title1": "Plus je regarde les enfants, plus je me sens étouffée et j'éclate en larmes. Ces enfants Ko-tu et les gens honnêtes d'ici m'ont inspiré mon rêve de faire du bénévolat. J'organiserai des projets et des programmes caritatifs spécifiques et pratiques pour soutenir les personnes vivant dans des zones difficiles. L’objectif immédiat est de les aider à avoir suffisamment de nourriture. Le prochain objectif est de les aider à améliorer leurs compétences. Les objectifs seront atteints de manière durable.",
+    "slider.title2": "Si vous avez les mêmes sentiments que moi et avez les mêmes rêves que moi, rejoignez ces projets caritatifs avec moi. Notre participation sincère apportera beaucoup de bonheur à toutes les parties. Nos amours aideront la société à développer et à diffuser l’amour.",
+    "slider.title3": "Dinh Thi Dong Phuong, fondatrice de Smile Eye Charity",
+
     "slider.subtitle": "Rejoignez-nous dans ce voyage",
     "slider.button": "Rejoindre maintenant",
     "detail.title": "Projets spécifiques",
@@ -45,7 +56,11 @@ const translationHome = {
     "index.report": "Rapport",
   },
   ja: {
-    "slider.title": "私たちは人々を助ける力を持っています",
+    "slider.title": "上の写真の子供たちを見てどう思いますか? 私は彼らの村や学校で彼らに会ったことがあります。 彼らは少数民族コウトゥ族の子供たちです。 私もそんな幼少期を経験しました。 私たちは食べ物も着るものも持っていませんでした。 そして、たくさんの人が私を助けてくれて、愛を与えてくれたことがとても嬉しかったです。 彼らは私に食べ物と衣服を与えてくれました。 彼らは私に、生き残るための多くのスキルと、優しい心で生きていくためのスキルを教えてくれました。 彼らは私の頭と心を成長させるのに役立ちました。 私は困難な状況で育ちましたが、人々は常に愛とサポートに満ちていると感じました。 そのおかげで、私は自分自身を成長させ、人生で素晴らしい機会を得ることができました。 私は奨学金を得て、日本で情報技術や NLP を含む多くの実践的な教育プログラムを無事に修了しました。 自信が持てるようになります。 私はこの人生が大好きです。 私の魂は今、人々への愛で満たされています。",
+    "slider.title1": "子どもたちを見れば見るほど胸が詰まり、涙が溢れてきました。 これらのコウトゥの子供たちとここの正直な人々は、私にボランティアの夢を与えてくれました。 困難な地域にいる人々を支援するための具体的かつ実践的な慈善プロジェクトやプログラムを企画します。 当面の目標は、彼らに十分な食料を与えられるよう支援することです。 次の目標は、彼らのスキル向上をサポートすることです。 目標は持続可能な方法で達成されます。",
+    "slider.title2": "私と同じ気持ち、同じ夢を持っている方は、ぜひ一緒にチャリティープロジェクトに参加してください。 私たちの誠実な参加は、すべての関係者に多くの幸福をもたらすでしょう。 私たちの愛は、社会が愛を発展させ、広めるのに役立ちます。",
+    "slider.title3": "ディン・ティ・ドン・フオン氏、スマイル・アイ・チャリティー創設者",
+
     "slider.subtitle": "この旅に参加してください",
     "slider.button": "参加する",
     "detail.title": "具体的なプロジェクト",
