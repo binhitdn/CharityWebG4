@@ -20,12 +20,12 @@ body {
   color: #037415;
 }
 .bigProjectContainer {
-  padding-top:30px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   width: 100%;
-  font-weight:700;
-  font-size:300%;
+  font-weight: 700;
+  font-size: 300%;
 }
 
 .line {
@@ -103,7 +103,7 @@ body {
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 1020px) {
   p {
     font-size: 0.6rem;
   }

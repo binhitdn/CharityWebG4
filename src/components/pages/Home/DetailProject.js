@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Button from "../../Button";
 import { useTranslation } from "react-i18next";
 import { Modal, Button as ButtonModal } from "react-bootstrap";
+import { toast } from "react-toastify";
 function SectionBigProject() {
   const { t } = useTranslation("translationHome");
   const { i18n } = useTranslation();
@@ -32,7 +33,7 @@ function SectionBigProject() {
     },
     en: {
       title:
-      "PROJECT TO SUPPORT CO-TU CHILDREN WITH BREAKFAST TO IMPROVE THEIR HEALTH",
+        "PROJECT TO SUPPORT CO-TU CHILDREN WITH BREAKFAST TO IMPROVE THEIR HEALTH",
       time: "Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)",
       plan: "Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province",
       progress: {
@@ -78,7 +79,7 @@ function SectionBigProject() {
     },
   };
 
-  const { title, time,plan, content, video } = programbig[LANG_CODE];
+  const { title, time, plan, content, video } = programbig[LANG_CODE];
   const [tymCount, setTymCount] = useState(0);
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
@@ -102,12 +103,20 @@ function SectionBigProject() {
     setTymCount(newTymCount);
   };
   const handleShareClick = () => {
-    const linkToCopy = "https://korehalinku.com"; // Thay thế đường dẫn bằng liên kết thực tế cần chia sẻ
-
+    const linkToCopy = window.location.href;
     navigator.clipboard
       .writeText(linkToCopy)
       .then(() => {
-        alert("đã copy link");
+        // Hiển thị thông báo bằng react-toastify
+        toast("Copy Successfully!", {
+          position: "top-center",
+          autoClose: 2000, // Thông báo sẽ tự đóng sau 2 giây
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+        });
       })
       .catch((error) => {
         console.error("Lỗi khi sao chép liên kết:", error);
@@ -132,9 +141,9 @@ function SectionBigProject() {
         {" "}
         {/* Thêm class text-center để căn giữa nội dung */}
         <div className="bigProjectContainer">
-      <div className="line1"></div>
+          <div className="line1"></div>
 
-    </div>
+        </div>
       </div>
       &nbsp;
       &nbsp;
@@ -163,76 +172,76 @@ function SectionBigProject() {
               </div>
             </div>
           </div>
-          
+
           <div className="w-full lg:w-2/5 px-4 mb-8">
             <div className="mb-8 mt-0">
               <div className="mb-8"></div>
-              <h2 className="text-3xl text-justify" style={{ color: '#1fab89',fontWeight: '700' }}>{title}</h2>
+              <h2 className="text-3xl text-justify" style={{ color: '#1fab89', fontWeight: '700' }}>{title}</h2>
               &nbsp;
 
               <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
-      <span style={{ fontWeight: 400, color: '#000000' }}>
-        <img
-          decoding="async"
-          className="wp-image-1286 alignnone lazyloaded"
-          src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
-          alt=""
-          width="26"
-          height="26"
-          data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
-        />
-      </span>
-      &nbsp;
-      <span style={{ fontWeight: 400 }}>{time}</span>
-    </div>
+                <span style={{ fontWeight: 400, color: '#000000' }}>
+                  <img
+                    decoding="async"
+                    className="wp-image-1286 alignnone lazyloaded"
+                    src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+                    alt=""
+                    width="26"
+                    height="26"
+                    data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+                  />
+                </span>
+                &nbsp;
+                <span style={{ fontWeight: 400 }}>{time}</span>
+              </div>
 
-    <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
-      <span style={{ fontWeight: 400, color: '#000000' }}>
-        <img
-          decoding="async"
-          className="wp-image-1286 alignnone lazyloaded"
-          src="https://smileeyecharity.org/wp-content/uploads/2023/10/Thiet-ke-chua-co-ten-3-400x400.png"
-          alt=""
-          width="40"
-          height="40"
-          data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
-        />
-      </span>
-      &nbsp;
-      <span style={{ fontWeight: 400 }}>{plan}</span>
-    </div>   
-    &nbsp;
+              <div className="mb-2 text-xl text-justify" style={{ display: 'flex', alignItems: 'center' }}>
+                <span style={{ fontWeight: 400, color: '#000000' }}>
+                  <img
+                    decoding="async"
+                    className="wp-image-1286 alignnone lazyloaded"
+                    src="https://smileeyecharity.org/wp-content/uploads/2023/10/Thiet-ke-chua-co-ten-3-400x400.png"
+                    alt=""
+                    width="40"
+                    height="40"
+                    data-src="https://smileeyecharity.org/wp-content/uploads/2023/10/22-400x400.png"
+                  />
+                </span>
+                &nbsp;
+                <span style={{ fontWeight: 400 }}>{plan}</span>
+              </div>
+              &nbsp;
 
               <p className="mb-8 text-xl text-justify">{content}</p>
               <div className="flex items-center justify-between mb-4">
-              <div className="text-sm font-semibold text-gray-600">
-                {programbig[LANG_CODE].progress.current} /{" "}
-                {programbig[LANG_CODE].progress.goal}
-              </div>
-         
-            </div>
-            <div className="relative pt-1">
-              <div className="flex mb-2 items-center justify-between">
-                <div>
-                  <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
-                    {t("index.donation")}
-                  </span>
+                <div className="text-sm font-semibold text-gray-600">
+                  {programbig[LANG_CODE].progress.current} /{" "}
+                  {programbig[LANG_CODE].progress.goal}
                 </div>
-                <div className="text-right">
-                  <span className="text-xs px-2 font-semibold inline-block text-green-600">
-                  {programbig[LANG_CODE].progress.percentage}
-                  </span>
+
+              </div>
+              <div className="relative pt-1">
+                <div className="flex mb-2 items-center justify-between">
+                  <div>
+                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                      {t("index.donation")}
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-xs px-2 font-semibold inline-block text-green-600">
+                      {programbig[LANG_CODE].progress.percentage}
+                    </span>
+                  </div>
+                </div>
+                <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                  <div
+                    style={{ width: programbig[LANG_CODE].progress.percentage }}
+                    className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                  ></div>
                 </div>
               </div>
-              <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
-                <div
-                  style={{ width: programbig[LANG_CODE].progress.percentage }}
-                  className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
-                ></div>
-              </div>
             </div>
-            </div>
-            
+
             <div className="flex items-center space-x-4">
               {/* <a href={t("SectionBigProject.pdf")}>
                 {t("SectionBigProject.detail")}
@@ -254,11 +263,11 @@ function SectionBigProject() {
                 onClick={handleTymClick}
               />
               <span className="ml-2">{tymCount}</span>
-              
-              <Button  className="btn " onClick={toggleModal}>
+
+              <Button className="btn " onClick={toggleModal}>
                 Be A Contribute
               </Button>
-              
+
               {showModal && (
                 <div
                   style={{
@@ -346,7 +355,7 @@ function SectionBigProject() {
                       </div>
                       <br />
                       {/* Thêm các trường đăng ký vào đây */}
-                  
+
                       <button type="submit" className="btn btn-primary" >
                         Regiter
                       </button>
@@ -355,21 +364,13 @@ function SectionBigProject() {
                 </div>
               )}
 
-              <button
-                className="btn bg-transparent "
+              <img
+                src="/share.png"
+                alt="Share"
+                className="w-8 h-8 cursor-pointer"
                 onClick={handleShareClick}
-              >
-                <span
-                  style={{
-                    color: "#000",
-                    textSize: "20px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Share
-                </span>
-              </button>
-              
+              />
+
             </div>
           </div>
         </div>
