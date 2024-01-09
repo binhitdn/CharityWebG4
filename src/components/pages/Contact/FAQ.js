@@ -21,52 +21,40 @@ function FAQ() {
               <summary className="py-2 outline-none cursor-pointer focus:underline">
                 {t("ifWecan")}
               </summary>
-              <div className="px-4 pb-4">
-                <p>
-                  {t("thankYou")}
-
-                </p>
+              <div className="px-2 lg:px-4 pb-4">
+                <p className="text-base">{t("thankYou")}</p>
               </div>
             </details>
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">
                 {t("ifIparticipate")}
               </summary>
-              <div className="px-4 pb-4">
-                <p>
-                {t("dependsOn")}
-                </p>
+              <div className="px-2 lg:px-4 pb-4">
+                <p className="text-base">{t("dependsOn")}</p>
               </div>
             </details>
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">
                 {t("iWouldLike")}
               </summary>
-              <div className="px-4 pb-4 space-y-2">
-                <p>
-                  {t("thankYouFor")}
-                </p>
+              <div className="px-2 lg:px-4 pb-4 space-y-2">
+                <p className="text-base">{t("thankYouFor")}</p>
               </div>
             </details>
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">
                 {t("iWant")}
               </summary>
-              <div className="px-4 pb-4 space-y-2">
-                <p>
-                  {t("thankYouForYour")}
-                </p>
+              <div className="px-2 lg:px-4 pb-4 space-y-2">
+                <p className="text-base">{t("thankYouForYour")}</p>
               </div>
             </details>
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">
-               {t("doesThe")}
+                {t("doesThe")}
               </summary>
-              <div className="px-4 pb-4 space-y-2">
-                <p>
-                  {t("eachProject")}
-
-                </p>
+              <div className="px-2 lg:px-4 pb-4 space-y-2">
+                <p className="text-base">{t("eachProject")}</p>
               </div>
             </details>
           </div>

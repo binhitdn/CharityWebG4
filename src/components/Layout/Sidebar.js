@@ -37,7 +37,7 @@ export default function Sidebar({ show, setter }) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
+      setIsDesktop(window.innerWidth >= 1000);
     };
 
     handleResize();

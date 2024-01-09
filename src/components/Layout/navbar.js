@@ -109,7 +109,7 @@ const Navbar = ({ toggleSidebar }) => {
         </div>
       </div>
       <nav className="px-2 sm:px-4 py-2" style={{ backgroundColor: "#037415" }}>
-        <div className="container flex flex-wrap justify-between items-center mx-auto">
+        <div className="container flex  justify-between items-center mx-auto">
           <Link href="/">
             <a href="#" className="flex" style={{ textDecoration: "none" }}>
               <div className="flex flex-row space-x-2 justify-center items-center ">
@@ -131,7 +131,7 @@ const Navbar = ({ toggleSidebar }) => {
             <button
               data-collapse-toggle="mobile-menu-4"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 py-3"
+              className="inline-flex items-center p-2 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 py-3"
               aria-controls="mobile-menu-4"
               aria-expanded="false"
               onClick={() => toggleSidebar()}
