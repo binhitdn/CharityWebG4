@@ -304,12 +304,12 @@ function SectionBigProject() {
                     >
                       &times;
                     </span>
-                    <h2>Form đăng ký thành viên</h2>
+                    <h2>FORM REGISTER</h2>
                     <br />
                     <form onSubmit={handleSubmit}>
                       <div className="form-group">
                         <label htmlFor="exampleInputEmail1">
-                          Tên đẩy đủ của bạn:
+                          Your fullname:
                         </label>
                         <input
                           type="email"
@@ -332,7 +332,7 @@ function SectionBigProject() {
                       </div>
                       <br></br>
                       <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Mật khẩu:</label>
+                        <label htmlFor="exampleInputPassword1">Password:</label>
                         <input
                           type="password"
                           className="form-control"
@@ -345,7 +345,7 @@ function SectionBigProject() {
                           className="form-check-label"
                           htmlFor="exampleCheck1"
                         >
-                          Tôi đồng ý
+                          I agree
                         </label>
                         <input
                           type="checkbox"
@@ -357,7 +357,7 @@ function SectionBigProject() {
                       {/* Thêm các trường đăng ký vào đây */}
 
                       <button type="submit" className="btn btn-primary" >
-                        Đăng ký
+                        Regiter
                       </button>
                     </form>
                   </div>
